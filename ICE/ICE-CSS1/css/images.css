@@ -1,0 +1,92 @@
+/* BORDER */
+
+
+img {
+	border: 5px solid black;
+	height: 200px;
+	width: 200px;
+	padding: 40px;
+	margin: 60px;
+}
+
+.hover:hover {
+	border-radius: 130px;
+}
+
+img:focus {
+	outline: 5px solid #ADD8E6;
+}
+
+.focus:focus {
+	filter: grayscale(100%);
+}
+
+div {
+	height: 50px;
+	background-color: #D3D3D3;
+}
+.square {
+	position: relative;
+	top: 15px;
+	height: 20px;
+	width: 20px;
+	background-color: blue;
+}
+
+.square:focus {
+	animation-name: slide;
+	animation-duration: 12s;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+
+}
+
+@keyframes slide {
+	0% {
+		left: 0;
+	}
+
+	50% {
+		left: 2000px;
+	}
+
+	100% {
+		left: 0;
+	}
+}
+
+img:active{
+	outline: 5px solid #ADD8E6;
+}
+
+.active:active{
+	opacity: .5;
+}
+
+.square:active {
+	background-color: red;
+	transform: rotate(360deg);
+	transition-property: transform;
+	transition-duration: 9s;
+	transition-timing-function: infinite;
+	animation-name: rotate;
+	animation-duration: 12s;
+	animation-timing-function: linear;
+	animation-delay: 4s;
+	animation-direction: alternate;
+}
+
+@keyframes rotate {
+	0% {
+		background-color: blue;
+		left: 0;
+	}
+	50% {
+		background-color: blue;
+		left: 2000px;
+	}
+	100% {
+		background-color: blue;
+		left: 0;
+	}
+}

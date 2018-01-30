@@ -1,0 +1,31 @@
+/* BORDER */
+
+
+img {
+	border: 5px solid black;
+	height: 200px;
+	width: 200px;
+	padding: 40px;
+	margin: 60px;
+}
+
+.hover:hover {
+	border-radius: 130px;
+}
+
+img:focus {
+	outline: 5px solid #ADD8E6;
+}
+
+.focus:focus {
+	filter: grayscale(100%);
+}
+
+div {
+	height: 5px;
+	background-color: gray;
+}
+
+@keyframes slide {
+
+}
