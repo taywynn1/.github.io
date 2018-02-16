@@ -51,14 +51,14 @@ footer {
 
 footer p {
 	position: absolute;
-	top: 425px;
+	top: 410px;
 	left: 110px;
 }
 
 aside {
 	background-color: white;
-	height: 393px;
-	width: 138px;
+	height: 375px;
+	width: 143px;
 	background-image: url("http://www.literarygenius.info/images/william-shakespeare.jpg");
 	background-repeat: no-repeat;
 	background-position: 100% 85%;
