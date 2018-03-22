@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+	<html lang = "en">
+		<head>
+			<title>Taylor Marguerite Wynn</title>
+			<link href = "css/main.css" type = 'text/css' rel = "stylesheet">
+			<link href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel = 'stylesheet'>
+			<meta charset = "utf-8">
+			<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script type="text/javascript">
+			$(document).ready(function() {
+				$('.navicon').click(function() {
+					$('.NavDropDown').slideToggle(500);
+				});
+			});
+			$(document).ready(function() {
+				$('#slideshow > div:first').show();
+				var i = 0;
+				setInterval(function() {
+					$('#slideshow > div:first-child').fadeOut(2000)
+						.next().fadeIn(2000)
+						.end().appendTo('#slideshow');
+				}, 5000);
+			});
+			</script>
+		</head>
+		<body>
+			<header>
+				<nav class = 'menu'>
+					<div class = 'logo'>
+						<a href = 'index.html'>TMW.</a>
+					</div>
+					<div class = 'top'>
+						<p class = "navicon">&#9776;</p>
+					</div>
+					<ul class = 'NavDropDown'>
+						<li><a href="index.html" class = 'menu-item'>Home</a></li>
+						<li><a href="projects.html" class = 'menu-item'>Projects</a></li>
+						<li><a href="about.html" class = 'menu-item'>About Me</a></li>
+						<li><a href="contact.html" class = 'menu-item'>Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div id = 'slideshow'>
+				<div>
+					<img src= "images/smallcity.jpg" alt= "A dock outside a restaurant in the Bahamas.">
+				</div>
+				<div>
+					<img src= "images/portugal2.jpg" alt= "A couple of buildings in Bilbao, Spain.">
+				</div>
+				<div>
+					<img src= "images/carousel.jpg" alt= "The Cliffs of Moher in Ireland.">
+				</div>
+				<div>
+					<img src= "images/trees.jpg" alt= "La Plaza de Mayor in Salamanca, Spain.">
+				</div>
+			</div>
+			<div class = 'name'>
+				<h1>Taylor Marguerite Wynn</h1>
+			</div>
+			<footer>
+				<div class = 'linkedin'>
+					<a href = 'www.linkedin.com/in/taylor-m-wynn'><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<div class = 'instagram'>
+					<a href = 'https://www.instagram.com/taywynn/'><i class="fab fa-instagram"></i></a>
+				</div>
+				<div class = 'mail'>
+					<a href = 'mailto:tmwynn@umich.edu'><i class="far fa-envelope"></i></a>
+				</div>
+				<div class = 'facebook'>
+					<a href = 'https://www.facebook.com/taylor.wynn84'><i class="fab fa-facebook-f"></i></a>
+				</div>
+				<div class = 'twitter'>
+					<a href = 'https://twitter.com/allido_is_WYNN'><i class="fab fa-twitter"></i></a>
+				</div>
+			</footer>
+		</body>
+	</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
