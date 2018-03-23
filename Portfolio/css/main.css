@@ -17,11 +17,11 @@ body {
 /*HEADER*/
 
 header {
-	height: 12%;
+	height: 12vh;
 	background-color: rgba(105, 105, 105, .85);
-	position: fixed;
-	width: 80%;
-	left: 10%;
+	position: fixed !important;
+	width: 80vw;
+	left: 10vw;
 	top:0;
 	z-index: 15;
 	font-size: 105%;
