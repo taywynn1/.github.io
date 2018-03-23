@@ -196,7 +196,7 @@ nav ul li a{
 
 .right {
 	margin-top: 4vh;
-	height: 100vh;
+	height: 82vh;
 	width: 80vw;
 	margin-left: 10vw;
 	display: block;
@@ -560,7 +560,7 @@ h2 {
 /*FOOTER*/
 footer {
 	background-color: rgba(60, 50, 73, 0.85);
-	position: fixed;
+	position: fixed !important;
 	height: 16%;
 	width: 100%;
 	bottom:0;
