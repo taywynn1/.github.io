@@ -7,9 +7,9 @@
 body {
 	font-size: 100%;
 	font-family: Chivo, sans-serif;
-	height: 100%;
-	width: 100%;
-	overflow: hidden !important;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
 	background-color: #F8F8F8;
 }
 
@@ -101,8 +101,8 @@ nav ul li a{
 
 #slideshow {
 	position: relative;
-	height: 100% !important;
-	width: 100% !important;
+	height: 100vh !important;
+	width: 100vw !important;
 	-webkit-overflow-scrolling: touch;
 }
 
@@ -111,8 +111,8 @@ nav ul li a{
 	display: none;
 	margin: 0 auto;
 	background-color: white;
-	width: 100% !important;
-	height: 100% !important;
+	width: 100vw !important;
+	height: 100vh !important;
 }
 
 #slideshow img {
@@ -120,8 +120,8 @@ nav ul li a{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100% !important;
-	height: 100% !important;
+	width: 100vw !important;
+	height: 100vh !important;
 	/*opacity: .94;*/
 	filter: brightness(60%);
 

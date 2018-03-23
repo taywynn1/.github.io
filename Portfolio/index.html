@@ -8,6 +8,17 @@
 			<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<script src="path/to/viewport-units-buggyfill.hacks.js"></script>
+			<script>window.viewportUnitsBuggyfill.init({
+
+    			// milliseconds to delay between updates of viewport-units
+    			// caused by orientationchange, pageshow, resize events
+    			refreshDebounceWait: 250,
+
+    			// provide hacks plugin to make the contentHack property work correctly.
+    			hacks: window.viewportUnitsBuggyfillHacks
+
+			});</script>
 			<script type="text/javascript">
 			$(document).ready(function() {
 				$('.navicon').click(function() {
