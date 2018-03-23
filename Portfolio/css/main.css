@@ -29,7 +29,7 @@ header {
 
 /*LOGO*/
 .logo {
-	margin-top: 2em;
+	margin-top: 1.6em;
 	margin-left: 1em;
 	display: inline-block;
 	width: 80%;
@@ -52,7 +52,7 @@ header {
 	display: inline-block;
 	width: 10%;
 	height: 50%;
-	margin-top: 2em;
+	margin-top: 1.6em;
 	margin-bottom: 0;
 }
 
@@ -110,8 +110,8 @@ nav ul li a{
 	display: none;
 	margin: 0 auto;
 	background-color: white;
-	max-width: 100%;
-	max-height: 100%;
+	width: 100vw;
+	height: 100vh;
 }
 
 #slideshow img {
