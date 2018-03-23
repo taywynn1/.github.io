@@ -214,15 +214,15 @@ nav ul li a{
 }
 
 .button{
-		height: 10%;
-    	background-color: rgb(60, 50, 73); /* Green */
+		height: 10% !important;
+    	background-color: rgb(60, 50, 73);
     	border: none;
     	color: white;
-    	padding: 15px 32px;
+    	padding: .9375em 2em;
     	text-align: center;
     	text-decoration: none;
     	display: inline-block;
-    	font-size: 16px;
+    	font-size: 1em;
 }
 
 .button:hover {
