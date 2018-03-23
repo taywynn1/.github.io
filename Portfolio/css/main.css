@@ -218,17 +218,16 @@ nav ul li a{
 }
 
 .button{
-		height: 10% !important;
+		height: 7.5%;
     	background-color: rgb(60, 50, 73);
     	border: none;
     	color: white;
-    	padding: 15px 32px;
+    	padding-top: 25px; 
     	text-align: center;
     	text-decoration: none;
     	display: inline-block;
     	font-size: 16px;
 }
-
 .button:hover {
 	cursor: pointer;
 }
