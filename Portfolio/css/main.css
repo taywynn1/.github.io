@@ -3,8 +3,6 @@
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	-webkit-overflow-scrolling: touch;
-
 }
 body {
 	font-size: 100%;
@@ -13,8 +11,6 @@ body {
 	width: 100vw;
 	overflow: hidden;
 	background-color: #F8F8F8;
-	-webkit-overflow-scrolling: touch;
-
 }
 
 
@@ -105,10 +101,8 @@ nav ul li a{
 
 #slideshow {
 	position: relative;
-	height: 100vw !important;
-	-webkit-height: 100vh;
+	height: 100vh !important;
 	width: 100vw !important;
-	-webkit-width: 100vw;
 	-webkit-overflow-scrolling: touch;
 }
 
@@ -118,9 +112,7 @@ nav ul li a{
 	margin: 0 auto;
 	background-color: white;
 	width: 100vw !important;
-	-webkit-width: 100vw;
 	height: 100vh !important;
-	-webkit-height: 100vh;
 }
 
 #slideshow img {
@@ -129,9 +121,7 @@ nav ul li a{
 	top: 0;
 	left: 0;
 	width: 100vw !important;
-	-webkit-width: 100vw;
 	height: 100vh !important;
-	-webkit-height: 100vh;
 	/*opacity: .94;*/
 	filter: brightness(60%);
 
@@ -206,7 +196,7 @@ nav ul li a{
 
 .right {
 	margin-top: 4vh;
-	height: 90vh;
+	height: 82vh;
 	width: 80vw;
 	margin-left: 10vw;
 	display: block;
@@ -218,11 +208,11 @@ nav ul li a{
 }
 
 .button{
-		height: 7.5%;
-    	background-color: rgb(60, 50, 73);
+		height: 10%;
+    	background-color: rgb(60, 50, 73); /* Green */
     	border: none;
     	color: white;
-    	padding-top: 25px; 
+    	padding: 15px 32px;
     	text-align: center;
     	text-decoration: none;
     	display: inline-block;
