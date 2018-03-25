@@ -104,6 +104,7 @@ nav ul li a{
 	height: 100vh !important;
 	width: 100vw !important;
 	-webkit-overflow-scrolling: touch;
+	overflow: hidden;
 }
 
 #slideshow div {
