@@ -101,10 +101,10 @@ nav ul li a{
 
 #slideshow {
 	position: relative;
-	height: 100vh !important;
-	width: 100vw !important;
+	height: 100vh;
+	width: 100vw;
 	-webkit-overflow-scrolling: touch;
-	overflow: hidden;
+	overflow: hidden !important;
 }
 
 #slideshow div {
@@ -112,8 +112,10 @@ nav ul li a{
 	display: none;
 	margin: 0 auto;
 	background-color: white;
-	width: 100vw !important;
-	height: 100vh !important;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden !important;
+
 }
 
 #slideshow img {
@@ -121,10 +123,12 @@ nav ul li a{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100vw !important;
-	height: 100vh !important;
+	width: 100vw;
+	height: 100vh;
 	/*opacity: .94;*/
 	filter: brightness(60%);
+	overflow: hidden !important;
+
 
 }
 
