@@ -9,7 +9,7 @@ body {
 	font-family: Chivo, sans-serif;
 	height: 100vh;
 	width: 100vw;
-	overflow: hidden;
+	overflow: hidden !important;
 	background-color: #F8F8F8;
 }
 
@@ -18,7 +18,6 @@ html {
 }
 .all {
 	overflow: hidden !important;
-	height: 100%;
 	position: fixed !important;
 }
 
