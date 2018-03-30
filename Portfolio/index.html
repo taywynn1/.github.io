@@ -17,15 +17,15 @@
 			});
 			var imgLength = document.getElementById('slideshow');
         	var images = imgLength.getElementsByTagName('img');
-        	var counter = 1;
+        	var counter = 0;
 
         	function slideshow() {
-        		if (counter <= images.length){
+        		if (counter <= images.length - 1){
             	setInterval(function(){
-                	images[0].src = images[counter].src;
+                	console.log(images[counter].src);
                 	counter++;
-                	if(counter === images.length){
-                    	counter = 1;
+                	if(counter === images.length - 1){
+                    	counter = 0;
                 	}
             			},4000);
         		}
