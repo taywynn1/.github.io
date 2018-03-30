@@ -17,7 +17,6 @@
 			});
 			$(document).ready(function() {
 				$('#slideshow > div:first').show();
-				var i = 0;
 				setInterval(function() {
 					$('#slideshow > div:first-child').fadeOut(2000)
 						.next().fadeIn(2000)
@@ -29,7 +28,7 @@
 		<body>
 			<div class = 'all'>
 				<header>
-					<nav class = 'menu'>
+					<nav>
 						<div class = 'logo'>
 							<a href = 'index.html'>TMW.</a>
 						</div>
@@ -37,25 +36,25 @@
 							<p class = "navicon">&#9776;</p>
 						</div>
 						<ul class = 'NavDropDown'>
-							<li><a href="index.html" class = 'menu-item'>Home</a></li>
-							<li><a href="projects.html" class = 'menu-item'>Projects</a></li>
-							<li><a href="about.html" class = 'menu-item'>About Me</a></li>
-							<li><a href="contact.html" class = 'menu-item'>Contact</a></li>
+							<li><a class = 'current-page' href="index.html">Home</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="about.html">About Me</a></li>
+							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</nav>
 				</header>
 				<div id = 'slideshow'>
 					<div>
-						<img src= "images/smallcity.jpg" alt= "A dock outside a restaurant in the Bahamas.">
+						<img src= "images/smallcity.jpg" alt= "A small city located in the outskirts of Lisbon, Portugal.">
 					</div>
 					<div>
-						<img src= "images/portugal2.jpg" alt= "A couple of buildings in Bilbao, Spain.">
+						<img src= "images/portugal2.jpg" alt= "City of Lisbon, Portugal.">
 					</div>
 					<div>
-						<img src= "images/carousel.jpg" alt= "The Cliffs of Moher in Ireland.">
+						<img src= "images/carousel.jpg" alt= "A carousel in Barcelona, Spain.">
 					</div>
 					<div>
-						<img src= "images/trees.jpg" alt= "La Plaza de Mayor in Salamanca, Spain.">
+						<img src= "images/trees.jpg" alt= "Fort at the top of Lisbon, Portugal.">
 					</div>
 				</div>
 				<div class = 'name'>
@@ -81,6 +80,7 @@
 			</div>
 		</body>
 	</html>
+
 
 
 

@@ -7,29 +7,21 @@
 body {
 	font-size: 100%;
 	font-family: Chivo, sans-serif;
-	height: 100vh;
-	width: 100vw;
-	overflow: hidden !important;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 	background-color: #F8F8F8;
-}
-
-html {
-	overflow: hidden !important;
-}
-.all {
-	overflow: hidden !important;
-	position: fixed !important;
 }
 
 
 /*HEADER*/
 
 header {
-	height: 12vh;
+	height: 12%;
 	background-color: rgba(105, 105, 105, .85);
-	position: fixed !important;
-	width: 80vw;
-	left: 10vw;
+	position: fixed;
+	width: 80%;
+	left: 10%;
 	top:0;
 	z-index: 15;
 	font-size: 105%;
@@ -37,7 +29,7 @@ header {
 
 /*LOGO*/
 .logo {
-	margin-top: 1.8em;
+	margin-top: 2em;
 	margin-left: 1em;
 	display: inline-block;
 	width: 80%;
@@ -60,7 +52,7 @@ header {
 	display: inline-block;
 	width: 10%;
 	height: 59%;
-	margin-top: 1.8em;
+	margin-top: 2em;
 	margin-bottom: 0;
 }
 
@@ -83,7 +75,7 @@ header {
 	height: 210%;
 }
 
-nav ul li {
+.NavDropDown li {
 	padding-top: .5em;
 	padding-bottom: 0;
 	background-color: rgba(90, 88, 107, 0.85);
@@ -94,15 +86,20 @@ nav ul li {
 	text-align: center;
 }
 
-.NavDropDown a:hover {
+.NavDropDown li a.current-page {
 	color: #b30000;
+	text-decoration: underline dashed white;
 }
 
-nav ul li a{
+.NavDropDown li a{
 	font-size: 1.5em;
 	color: white;
 	text-decoration: none;
 	text-align: center;
+}
+
+.NavDropDown li a:hover {
+	color: #b30000;
 }
 
 /*SLIDESHOW*/
@@ -112,31 +109,26 @@ nav ul li a{
 	height: 100vh;
 	width: 100vw;
 	-webkit-overflow-scrolling: touch;
-	overflow: hidden !important;
 }
 
 #slideshow div {
-	display: block;
 	display: none;
 	margin: 0 auto;
 	background-color: white;
 	width: 100vw;
 	height: 100vh;
-	overflow: hidden !important;
-
 }
 
 #slideshow img {
 	z-index: 8;
+	display: block;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	/*opacity: .94;*/
+	opacity: .94;
 	filter: brightness(60%);
-	overflow: hidden !important;
-
 
 }
 
@@ -159,36 +151,19 @@ nav ul li a{
 /*PROJECTS PAGE*/
 
 
-.first {
-	width: 80vw;
-	height: 45%;
-	margin-top: 14vh;
-	margin-left: 10vw;
-	display: inline-block;
-}
-
-.oscarsproj {
-	margin-top: 4vh;
-}
-
-
-.second { 
-	width: 80vw;
-	height: 45%;
-	margin-top: 4vh;
-	margin-left: 10vw;
-	display: inline-block;
-}
-
-.zaraproj {
-	margin-top: 4vh;
-	
-}
-
 .projects {
 	overflow: auto;
-	width: 100vw;
-	height: 82vh;
+	width: 80vw;
+	height: 70vh;
+	margin-left: 10vw;
+	margin-top: 14vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.projpic {
+	height: 75%;
+	margin-bottom: 1em;
 }
 
 /*ABOUT ME PAGE */
@@ -240,12 +215,17 @@ nav ul li a{
 
 .contact {
 	display: block;
-	width: 100vw;
+	width: 80vw;
 	height: 68vh;
 	margin-top: 14vh;
+	margin-left: 10vw;
 	text-align: center;
-	/*background-color: rgba(60, 50, 73, 0.2);*/
 	overflow: auto;
+	background-image: url('../images/sunset.jpg');
+	background: linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.8)), url('../images/sunset.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 80% 80%;
 
 }
 
@@ -255,7 +235,6 @@ nav ul li a{
 }
 form {
 	width: 80vw;
-	margin-left: 10vw;
 	display: block;
 	height: 80vh;
 }
@@ -264,10 +243,11 @@ form div {
 	display: block;
 	height: auto;
 	text-align: center;
-	background-color: rgba(60, 50, 73, 0.2);
+	background-color: rgba(60, 50, 73, 0.63);
 	padding: 3%;
 	border-radius: 2%;
 	width: 75vw;
+	color: white;
 }
 
 .contact p a{
@@ -384,12 +364,12 @@ form div {
 	font-size: 800%;
 }
 
-h2 {
+h2, h1 {
 	color: rgba(60, 50, 73, .8);
 }
 
 /*HBO Interaction section*/
-.hbo_interaction {
+.outline {
 	height: auto;
 	width: 80vw;
 	margin-left: 10vw;
@@ -399,181 +379,41 @@ h2 {
 	border-bottom-style: solid;  
 }
 
-
-/*HBO research section*/
-.hbo_research {
-	height: auto;
-	width: 80vw;
-	margin-left: 10vw;
-	margin-bottom: 2vh;
-	border-bottom-color: black;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;  
-}
-
-.hbo_research ul {
+.outline ul {
 	margin-left: 10%;
 }
 
-/*HBO competitors*/
-.hbo_competitors {
-	height: auto;
-	width: 80vw;
-	margin-left: 10vw;
-}
 
-.hbo_competitors ul {
-	margin-left: 10%;
-}
-
-.hbo_competitors img {
-	width: 80vw;
-	height: auto;
-}
-
-/*HBO Go Interviews section*/
-
-.hbo_interviews {
-	height: auto;
-	width: 80vw;
-	margin-left: 10vw;
-	margin-bottom: 2vh;
-	border-bottom-color: black;
-	border-bottom-width: 1px;
-	border-bottom-style: solid; 
-	border-top-color: black;
-	border-top-width: 1px;
-	border-top-style: solid; 
-}
-.hbo_interviews ul {
-	margin-left: 10%;
-}
-
-/*HBO Go personas section*/
-.hbo_personas {
-	height: auto;
-	width: 80vw;
-	margin-left: 10vw;
-	margin-bottom: 2vh;
-	border-bottom-color: black;
-	border-bottom-width: 1px;
-	border-bottom-style: solid; 
-}
-
-.hbo_personas p {
+.outline p {
 	text-align: left;
 }
 
-/*HBO Go survey section */
-
-.hbo_survey {
-	height: auto;
-	width: 80vw;
-	margin-left: 10vw;
-	margin-bottom: 2vh;
-	border-bottom-color: black;
-	border-bottom-width: 1px;
-	border-bottom-style: solid; 
-}
-
-/*HBO Go preference test section */
-.hbo_preference {
-	height: auto;
-	width: 80vw;
-	margin-left: 10vw;
-	margin-bottom: 2vh;
-	border-bottom-color: black;
-	border-bottom-width: 1px;
-	border-bottom-style: solid; 
-}
-
-/*HBO Go findings section */
-
-
-.hbo_findings {
-	height: auto;
-	width: 80vw;
-	margin-left: 10vw;
-	margin-bottom: 2vh;
-}
-
-.hbo_findings ul {
-	margin-left: 10%;
-}
-
-/*Oscars page */
-.oscars {
+/*Pages no yet created*/
+.layout {
 	height: 82vh;
 	width: 80vw;
 	margin-left: 10vw;
 	margin-bottom: 2vh;
-	margin-top: 14vh;
+	margin-top: 38vh;
 	text-align: center;
 }
 
-.oscars h2 {
-	height: 10vh;
-	font-size: 7vw;
-	margin-top: 40vh;
+.layout h1 {
+	height: 12%;
 }
 
-.oscars p {
-	height: 5vh;
-	font-size: 7vw;
-	margin-top: 10vh;
+.i3research h1 {
+	height: 38%;
 }
 
-/*Emoji page*/
-
-.emoji {
-	height: 82vh;
-	width: 80vw;
-	margin-left: 10vw;
-	margin-bottom: 2vh;
-	margin-top: 14vh;
-	text-align: center;
+.layout h2 {
+	color: black;
 }
-
-.emoji h2 {
-	height: 10vh;
-	font-size: 8vw;
-	margin-top: 40vh;
-}
-
-.emoji p {
-	height: 5vh;
-	font-size: 8vw;
-	margin-top: 10vh;
-}
-
-/*Zara page */
-.zara {
-	height: 82vh;
-	width: 80vw;
-	margin-left: 10vw;
-	margin-bottom: 2vh;
-	margin-top: 14vh;
-	text-align: center;
-}
-
-.zara h2 {
-	height: 10vh;
-	font-size: 8vw;
-	margin-top: 25vh;
-}
-
-.zara p {
-	height: 5vh;
-	font-size: 7vw;
-	margin-top: 30vh;
-}
-
-
 
 /*FOOTER*/
 footer {
 	background-color: rgba(60, 50, 73, 0.85);
-	position: fixed !important;
+	position: fixed;
 	height: 16%;
 	width: 100%;
 	bottom:0;
@@ -595,7 +435,7 @@ footer div a {
 
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 768px) {
 	/*HEADER*/
 
 	/*LOGO*/
@@ -635,29 +475,16 @@ footer div a {
 
 	/*PROJECTS PAGE */
 
-	.first {
+	.projects {
 		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 
-
-	.first div {
-		width: 48%;
+	.projpic {
+		width: 46.9%;
 	}
-
-	.oscarsproj, .zaraproj {
-		margin-top: 0;
-	}
-
-	.second {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.second div {
-		width: 48%;
-	}
-
 	
 	 /*ABOUT ME PAGE */
 	.info {
@@ -710,7 +537,7 @@ footer div a {
 
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1025px) {
 	/*HEADER*/
 	
 	/*LOGO*/
@@ -728,13 +555,13 @@ footer div a {
 		text-align: right;
 	}
 
-	nav ul li {
+	.NavDropDown li {
 	padding: .5em;
 	background-color: transparent;
-	display: inline-block;
+	display: inline;
 	}
 
-	nav ul li a {
+	.NavDropDown li a {
 		font-size: 1.5em;
 	}
 
@@ -742,9 +569,13 @@ footer div a {
 		display: none;
 	}
 
+	/*PROJECT PAGE*/
+	.projpic {
+		width: 24%;
+	}
+
 	/*ABOUT ME */
 	 
-
 	.left {
 		height: 72vh;
 		flex: 40%;
