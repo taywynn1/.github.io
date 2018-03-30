@@ -15,14 +15,22 @@
 					$('.NavDropDown').slideToggle(500);
 				});
 			});
-			$(document).ready(function() {
-				$('#slideshow > div:first').show();
-				setInterval(function() {
-					$('#slideshow > div:first-child').fadeOut(2000)
-						.next().fadeIn(2000)
-						.end().appendTo('#slideshow');
-				}, 6000);
-			});
+			var imgLength = document.getElementById('slideshow');
+        	var images = imgLength.getElementsByTagName('img');
+        	var counter = 1;
+
+        	function slideshow() {
+        		if (counter <= images.length){
+            	setInterval(function(){
+                	images[0].src = images[counter].src;
+                	counter++;
+                	if(counter === images.length){
+                    	counter = 1;
+                	}
+            			},4000);
+        		}
+        	}
+        	window.onload = slideshow;
 			</script>
 		</head>
 		<body>
