@@ -28,7 +28,7 @@ html {
 header {
 	height: 12%;
 	background-color: rgba(105, 105, 105, .85);
-	position: fixed;
+	position: fixed !important;
 	width: 80%;
 	left: 10%;
 	top:0;
@@ -38,7 +38,7 @@ header {
 
 /*LOGO*/
 .logo {
-	margin-top: 2em;
+	margin-top: 1.8em;
 	margin-left: 1em;
 	display: inline-block;
 	width: 80%;
@@ -61,7 +61,7 @@ header {
 	display: inline-block;
 	width: 10%;
 	height: 59%;
-	margin-top: 2em;
+	margin-top: 1.8em;
 	margin-bottom: 0;
 }
 
