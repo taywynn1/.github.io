@@ -14,12 +14,11 @@ body {
 }
 
 html {
-	overflow: hidden;
+	overflow: hidden !important;
 }
 
 .all {
  	overflow: hidden !important;
-	height: 100%;
  	position: fixed !important;
  }
 
