@@ -616,7 +616,7 @@ footer div a {
 	}
 
 	.projpic {
-		height: 50vw;
+		height: 30vw;
 		margin-bottom: 1em;
 	}
 
@@ -626,7 +626,7 @@ footer div a {
 		display: inline-block;
 		overflow: auto;
 		width: 100vw;
-		height: 82vh;
+		height: 75vh;
 	}
 
 	.left {
@@ -670,7 +670,7 @@ footer div a {
 	.contact {
 		display: block;
 		width: 80vw;
-		height: 68vh;
+		height: 50vh;
 		margin-top: 14vw;
 		margin-left: 10vw;
 		text-align: center;
@@ -848,7 +848,7 @@ footer div a {
 		width: 80vw;
 		margin-left: 10vw;
 		margin-bottom: 2vh;
-		margin-top: 38vh;
+		margin-top: 20vh;
 		text-align: center;
 	}
 
