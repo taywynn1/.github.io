@@ -25,7 +25,7 @@ html {
 /*HEADER*/
 
 header {
-	height: 12vh;
+	height: 12vh !important;
 	background-color: rgba(105, 105, 105, .85);
 	position: fixed !important;
 	width: 80vw;
@@ -421,7 +421,7 @@ h2, h1 {
 /*FOOTER*/
 footer {
 	background-color: rgba(60, 50, 73, 0.85);
-	position: fixed;
+	position: fixed !important;
 	height: 16% !important;
 	width: 100%;
 	bottom:0;
