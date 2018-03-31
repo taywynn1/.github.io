@@ -11,6 +11,7 @@ body {
 	width: 100%;
 	overflow: hidden !important;
 	background-color: #F8F8F8;
+	-webkit-text-size-adjust: 100%;
 }
 
 html {
