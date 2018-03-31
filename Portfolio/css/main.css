@@ -608,7 +608,7 @@ footer div a {
 	.projects {
 		overflow: auto;
 		width: 80vw;
-		height: 50vh;
+		height: 30vh;
 		margin-left: 10vw;
 		margin-top: 14vw;
 		display: flex;
@@ -722,7 +722,7 @@ footer div a {
 	}
 
 	.form_submit {
-		height: 10%;
+		height: 12%;
 	}
 
 	.form_submit input {
@@ -742,7 +742,7 @@ footer div a {
 	/*HBO basic info section*/
 	.hbo {
 		width: 100vw;
-		height: 50vh;
+		height: 45vh;
 		margin-top: 14vw;
 		overflow: auto;
 	}
