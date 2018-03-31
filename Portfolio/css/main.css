@@ -123,7 +123,7 @@ header {
 #slideshow div {
 	display: none;
 	margin: 0 auto;
-	background-color: white;
+	background-color: black;
 	width: 100vw;
 	height: 100vh;
 }
@@ -568,7 +568,7 @@ footer div a {
 	#slideshow div {
 		display: none;
 		margin: 0 auto;
-		background-color: white;
+		background-color: black;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -608,7 +608,7 @@ footer div a {
 	.projects {
 		overflow: auto;
 		width: 80vw;
-		height: 30vh;
+		height: 90vh;
 		margin-left: 10vw;
 		margin-top: 14vw;
 		display: flex;
