@@ -21,6 +21,7 @@ html {
 .all {
  	overflow: hidden !important;
  	position: fixed !important;
+ 	-webkit-text-size-adjust: 100%;
  }
 
 /*HEADER*/
