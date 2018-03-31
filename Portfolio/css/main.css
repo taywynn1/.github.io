@@ -449,8 +449,8 @@ footer div a {
 		height: 12vw !important;
 		background-color: rgba(105, 105, 105, .85);
 		position: fixed !important;
-		width: 80vh;
-		left: 10vh;
+		width: 80vw;
+		left: 10vw;
 		top:0;
 		z-index: 15;
 		font-size: 105%;
@@ -844,7 +844,7 @@ footer div a {
 		background-color: rgba(60, 50, 73, 0.85);
 		position: fixed;
 		height: 16vw;
-		width: 100vh;
+		width: 100vw;
 		bottom:0;
 		z-index: 15;
 	}
