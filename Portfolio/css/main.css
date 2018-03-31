@@ -443,7 +443,7 @@ footer div a {
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-device-width: 768px) {
 	/*HEADER*/
 
 	/*LOGO*/
@@ -545,7 +545,7 @@ footer div a {
 
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-device-width: 1025px) {
 	/*HEADER*/
 	
 	/*LOGO*/

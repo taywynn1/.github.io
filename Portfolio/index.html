@@ -8,29 +8,28 @@
 			<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
-			<script src="path/to/viewport-units-buggyfill.hacks.js"></script>
-			<script type="text/javascript">
+			<script type = 'text/javascript'>
 			$(document).ready(function() {
 				$('.navicon').click(function() {
 					$('.NavDropDown').slideToggle(500);
 				});
 			});
-			var imgLength = document.getElementById('slideshow');
-        	var images = imgLength.getElementsByTagName('img');
-        	var counter = 0;
 
-        	function slideshow() {
-        		if (counter <= images.length - 1){
-            	setInterval(function(){
-                	console.log(images[counter].src);
-                	counter++;
-                	if(counter === images.length - 1){
-                    	counter = 0;
-                	}
-            			},4000);
+        	var counter = 0;
+        	var images = ['images/smallcity.jpg', 'images/portugal2.jpg', 'images/carousel.jpg', 'images/trees.jpg']
+        	function ImgChange() {
+        		document.slideshowimages.src = images[counter]
+
+        		if (counter < images.length - 1){
+            		counter++;
+        		}
+        		else{
+        			counter = 0;
         		}
         	}
-        	window.onload = slideshow;
+        	setInterval('ImgChange()', 6000);
+
+        	window.onload = ImgChange;
 			</script>
 		</head>
 		<body>
@@ -52,18 +51,7 @@
 					</nav>
 				</header>
 				<div id = 'slideshow'>
-					<div>
-						<img src= "images/smallcity.jpg" alt= "A small city located in the outskirts of Lisbon, Portugal.">
-					</div>
-					<div>
-						<img src= "images/portugal2.jpg" alt= "City of Lisbon, Portugal.">
-					</div>
-					<div>
-						<img src= "images/carousel.jpg" alt= "A carousel in Barcelona, Spain.">
-					</div>
-					<div>
-						<img src= "images/trees.jpg" alt= "Fort at the top of Lisbon, Portugal.">
-					</div>
+					<img name = 'slideshowimages' src = 'smallcity.jpg'alt= "Slideshow.">
 				</div>
 				<div class = 'name'>
 					<h1>Taylor Marguerite Wynn</h1>
