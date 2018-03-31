@@ -743,7 +743,7 @@ footer div a {
 	/*HBO basic info section*/
 	.hbo {
 		width: 100vw;
-		height: 70vh;
+		height: 82vh;
 		margin-top: 14vw;
 		overflow: auto;
 	}
@@ -759,7 +759,7 @@ footer div a {
 	}
 
 	.hbo_info  h1 {
-		height: 10vh;
+		height: 10vw;
 		font-size: 450%;
 	}
 
@@ -868,7 +868,7 @@ footer div a {
 	footer {
 		background-color: rgba(60, 50, 73, 0.85);
 		position: fixed !important;
-		height: 12vw !important;
+		height: 14vw !important;
 		width: 100vw !important;
 		bottom:0;
 		z-index: 15;
