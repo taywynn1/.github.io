@@ -156,6 +156,7 @@ header {
 	font-size: 8vw;
 	letter-spacing: .01em;
 	display: inline-block;
+	background-color: black;
 }
 
 /*PROJECTS PAGE*/
@@ -603,6 +604,7 @@ footer div a {
 		font-size: 8vw;
 		letter-spacing: .01em;
 		display: inline-block;
+		background-color: black;
 	}
 
 	/*PROJECTS PAGE*/
