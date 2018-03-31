@@ -743,7 +743,7 @@ footer div a {
 	/*HBO basic info section*/
 	.hbo {
 		width: 100vw;
-		height: 80vh;
+		height: 90vh;
 		margin-top: 14vw;
 		overflow: auto;
 	}
@@ -759,7 +759,7 @@ footer div a {
 	}
 
 	.hbo_info  h1 {
-		height: 10vh;
+		height: 10vw;
 		font-size: 450%;
 	}
 
