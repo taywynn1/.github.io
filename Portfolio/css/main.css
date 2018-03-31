@@ -261,10 +261,11 @@ form div {
 }
 
 .contact p a{
-	color: red;
+	color: #890202;
+	background-color: black;
 }
 .asterisk {
-	color: red;
+	color: #890202;
 	font-size: 130%;
 }
 
@@ -610,7 +611,7 @@ footer div a {
 	.projects {
 		overflow: auto;
 		width: 80vw;
-		height: 40vh;
+		height: 42vh;
 		margin-left: 10vw;
 		margin-top: 14vw;
 		display: flex;
@@ -706,10 +707,11 @@ footer div a {
 	}
 
 	.contact p a{
-		color: red;
+		color: #890202;
+		background-color: black;
 	}
 	.asterisk {
-		color: red;
+		color: #890202;
 		font-size: 130%;
 	}
 
