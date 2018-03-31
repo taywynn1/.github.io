@@ -935,6 +935,8 @@ footer div a {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		width: 80vw;
+		height: 48vh;
 	}
 
 	.projpic {
@@ -989,9 +991,19 @@ footer div a {
 		display: flex;
 	}
 
+	.hbo {
+		width: 100vw;
+		height: 46vh;
+	}
+
+	.contact {
+		width: 80vw;
+		height: 40vh;
+	}
+
 }
 
-@media only screen and (min-width: 824px) and (max-width: 1023px) and (orientation: landscape) {
+@media only screen and (min-width: 824px) and (max-width: 1024px) and (orientation: landscape) {
 	/*HEADER*/
 
 	/*LOGO*/
@@ -1105,7 +1117,7 @@ footer div a {
 
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
 	/*HEADER*/
 	
 	/*LOGO*/
