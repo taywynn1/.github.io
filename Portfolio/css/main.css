@@ -608,7 +608,7 @@ footer div a {
 	.projects {
 		overflow: auto;
 		width: 80vw;
-		height: 45vh;
+		height: 50vh;
 		margin-left: 10vw;
 		margin-top: 14vw;
 		display: flex;
@@ -669,7 +669,7 @@ footer div a {
 	.contact {
 		display: block;
 		width: 80vw;
-		height: 48vh;
+		height: 42vh;
 		margin-top: 14vw;
 		margin-left: 10vw;
 		text-align: center;
