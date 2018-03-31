@@ -148,8 +148,6 @@ header {
 	top: 40vh;
 	z-index: 10;
 	display: inline-block;
-	background-color: black;
-
 }
 
 .name h1 {
@@ -598,8 +596,7 @@ footer div a {
 		top: 40vh;
 		z-index: 10;
 		display: inline-block;
-		background-color: black;
-
+		
 	}
 
 	.name h1 {
