@@ -444,7 +444,7 @@ footer div a {
 
 }
 
-@media only screen and (max-width: 766px) and (orientation: landscape) {
+@media only screen and (max-width: 812px) and (orientation: landscape) {
 	* {
 		height: 100%;
 		width: 100%;
@@ -1003,7 +1003,7 @@ footer div a {
 
 }
 
-@media only screen and (min-width: 824px) and (max-width: 1025px) and (orientation: landscape) {
+@media only screen and (min-width: 812px) and (max-width: 1025px) and (orientation: landscape) {
 	/*HEADER*/
 
 	/*LOGO*/
