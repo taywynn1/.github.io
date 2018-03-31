@@ -608,7 +608,7 @@ footer div a {
 	.projects {
 		overflow: auto;
 		width: 80vw;
-		height: 70vh;
+		height: 55vh;
 		margin-left: 10vw;
 		margin-top: 14vw;
 		display: flex;
@@ -650,15 +650,15 @@ footer div a {
 	}
 
 	.button{
-			height: 10%;
-	    	background-color: rgb(60, 50, 73); /* Green */
-	    	border: none;
-	    	color: white;
-	    	padding: 15px 32px;
-	    	text-align: center;
-	    	text-decoration: none;
-	    	display: inline-block;
-	    	font-size: 16px;
+		height: 10%;
+	   	background-color: rgb(60, 50, 73); /* Green */
+	   	border: none;
+	   	color: white;
+	   	padding: 15px 32px;
+	   	text-align: center;
+	   	text-decoration: none;
+	   	display: inline-block;
+	   	font-size: 16px;
 	}
 
 	.button:hover {
@@ -743,7 +743,7 @@ footer div a {
 	/*HBO basic info section*/
 	.hbo {
 		width: 100vw;
-		height: 60vh;
+		height: 55vh;
 		margin-top: 14vw;
 		overflow: auto;
 	}
