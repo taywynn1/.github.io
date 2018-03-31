@@ -608,7 +608,7 @@ footer div a {
 	.projects {
 		overflow: auto;
 		width: 80vw;
-		height: 55vh;
+		height: 52vh;
 		margin-left: 10vw;
 		margin-top: 14vw;
 		display: flex;
@@ -616,7 +616,7 @@ footer div a {
 	}
 
 	.projpic {
-		height: 75%;
+		height: 75vw;
 		margin-bottom: 1em;
 	}
 
