@@ -589,7 +589,7 @@ footer div a {
 	.name {
 		position: absolute;
 		left: 5vw;
-		top: 40vw;
+		top: 40vh;
 		z-index: 10;
 		display: inline-block;
 	}
@@ -608,7 +608,7 @@ footer div a {
 	.projects {
 		overflow: auto;
 		width: 80vw;
-		height: 82vw;
+		height: 70vh;
 		margin-left: 10vw;
 		margin-top: 14vw;
 		display: flex;
@@ -626,7 +626,7 @@ footer div a {
 		display: inline-block;
 		overflow: auto;
 		width: 100vw;
-		height: 82vw;
+		height: 82vh;
 	}
 
 	.left {
@@ -637,8 +637,8 @@ footer div a {
 	}
 
 	.right {
-		margin-top: 4vw;
-		height: 82vw;
+		margin-top: 4vh;
+		height: 82vh;
 		width: 80vw;
 		margin-left: 10vw;
 		display: block;
@@ -690,7 +690,7 @@ footer div a {
 	form {
 		width: 80vw;
 		display: block;
-		height: 80vw;
+		height: 80vh;
 	}
 
 	form div {
@@ -743,7 +743,7 @@ footer div a {
 	/*HBO basic info section*/
 	.hbo {
 		width: 100vw;
-		height: 82vw;
+		height: 80vh;
 		margin-top: 14vw;
 		overflow: auto;
 	}
@@ -754,12 +754,12 @@ footer div a {
 		border-radius: 3%;
 		width: 80vw;
 		margin-left: 10vw;
-		height: 20vw;
+		height: 20vh;
 		margin-bottom: 2%;
 	}
 
 	.hbo_info  h1 {
-		height: 10vw;
+		height: 10vh;
 		font-size: 450%;
 	}
 
@@ -772,7 +772,7 @@ footer div a {
 		height: auto;
 		margin-left: 10vw;
 		display: inline-block;
-		margin-bottom: 2vw;
+		margin-bottom: 2vh;
 		border-bottom-color: black;
 		border-bottom-width: 1px;
 		border-bottom-style: solid;  
@@ -797,21 +797,21 @@ footer div a {
 		width: 80vw;
 		height: 60%;
 		text-align: center;
-		margin-bottom: 4vw;
+		margin-bottom: 4vh;
 	}
 
 	.timeframe {
 		width: 80vw;
 		height: 60%;
 		text-align: center;
-		margin-bottom: 4vw;
+		margin-bottom: 4vh;
 	}
 
 	.process {
 		width: 80vw;
 		height: 60%;
 		text-align: center;
-		margin-bottom: 4vw;
+		margin-bottom: 4vh;
 	}
 
 	.hi-icon {
@@ -827,7 +827,7 @@ footer div a {
 		height: auto;
 		width: 80vw;
 		margin-left: 10vw;
-		margin-bottom: 2vw;
+		margin-bottom: 2vh;
 		border-bottom-color: black;
 		border-bottom-width: 1px;
 		border-bottom-style: solid;  
@@ -844,11 +844,11 @@ footer div a {
 
 	/*Pages no yet created*/
 	.layout {
-		height: 82vw;
+		height: 82vh;
 		width: 80vw;
 		margin-left: 10vw;
-		margin-bottom: 2vw;
-		margin-top: 38vw;
+		margin-bottom: 2vh;
+		margin-top: 38vh;
 		text-align: center;
 	}
 
