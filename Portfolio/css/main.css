@@ -608,7 +608,7 @@ footer div a {
 	.projects {
 		overflow: auto;
 		width: 80vw;
-		height: 90vh;
+		height: 35vh;
 		margin-left: 10vw;
 		margin-top: 14vw;
 		display: flex;
@@ -649,7 +649,7 @@ footer div a {
 	}
 
 	.button{
-		height: 10%;
+		height: 12%;
 	   	background-color: rgb(60, 50, 73); /* Green */
 	   	border: none;
 	   	color: white;
