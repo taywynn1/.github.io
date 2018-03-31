@@ -156,7 +156,7 @@ header {
 	font-size: 8vw;
 	letter-spacing: .01em;
 	display: inline-block;
-	background-color: black;
+	b
 }
 
 /*PROJECTS PAGE*/
@@ -596,7 +596,6 @@ footer div a {
 		top: 40vh;
 		z-index: 10;
 		display: inline-block;
-		
 	}
 
 	.name h1 {
@@ -605,7 +604,6 @@ footer div a {
 		font-size: 8vw;
 		letter-spacing: .01em;
 		display: inline-block;
-		background-color: black;
 	}
 
 	/*PROJECTS PAGE*/
