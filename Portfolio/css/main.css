@@ -616,7 +616,7 @@ footer div a {
 	}
 
 	.projpic {
-		height: 75vw;
+		height: 50vw;
 		margin-bottom: 1em;
 	}
 
@@ -743,7 +743,7 @@ footer div a {
 	/*HBO basic info section*/
 	.hbo {
 		width: 100vw;
-		height: 55vh;
+		height: 50vh;
 		margin-top: 14vw;
 		overflow: auto;
 	}
