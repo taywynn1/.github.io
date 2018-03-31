@@ -18,7 +18,8 @@
         	var counter = 0;
         	var images = ['images/smallcity.jpg', 'images/portugal2.jpg', 'images/carousel.jpg', 'images/trees.jpg']
         	function ImgChange() {
-        		document.slideshowimages.src = images[counter]
+        		var imgelem = document.getElementById('slideshowimg')
+        		imgelem.src = images[counter]
 
         		if (counter < images.length - 1){
             		counter++;
@@ -51,7 +52,7 @@
 					</nav>
 				</header>
 				<div id = 'slideshow'>
-					<img name = 'slideshowimages' src = 'smallcity.jpg'alt= "Slideshow.">
+					<img id = 'slideshowimg' src = 'smallcity.jpg'alt= "Slideshow.">
 				</div>
 				<div class = 'name'>
 					<h1>Taylor Marguerite Wynn</h1>

@@ -443,7 +443,429 @@ footer div a {
 
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (orientation: landscape) {
+		header {
+		height: 12vh;
+		background-color: rgba(105, 105, 105, .85);
+		position: fixed !important;
+		width: 80vw;
+		left: 10vw;
+		top:0;
+		z-index: 15;
+		font-size: 105%;
+	}
+
+	/*LOGO*/
+	.logo {
+		margin-top: 1.8em;
+		margin-left: 1em;
+		display: inline-block;
+		width: 80%;
+		height: 55%;
+		margin-bottom: 0;
+	}
+
+	.logo a {
+		color: white;
+		text-decoration: none;
+		text-align: center;
+		font-size: 2.3em;
+		font-family: Chivo, sans-serif; 
+		font-weight: 400;
+		text-transform: capitalize;
+	}
+
+	/*NAVIGATION MENU*/
+	.top {
+		display: inline-block;
+		width: 10%;
+		height: 59%;
+		margin-top: 1.8em;
+		margin-bottom: 0;
+	}
+
+	.navicon {
+		color: white;
+		font-size: 2.2em;
+		text-align: center;
+	}
+
+	.navicon:hover {
+		cursor: pointer;
+	}
+
+	.NavDropDown {
+		list-style-type: none;
+		padding: 0;
+		color: white; 
+		margin: 0;
+		display: none;
+		height: 210%;
+	}
+
+	.NavDropDown li {
+		padding-top: .5em;
+		padding-bottom: 0;
+		background-color: rgba(90, 88, 107, 0.85);
+		font-family: Chivo, sans-serif; 
+		margin: 0;
+		display: block;
+		height: 20%;
+		text-align: center;
+	}
+
+	.NavDropDown li a.current-page {
+		color: #b30000;
+		text-decoration: underline dashed white;
+	}
+
+	.NavDropDown li a{
+		font-size: 1.5em;
+		color: white;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	.NavDropDown li a:hover {
+		color: #b30000;
+	}
+
+	/*SLIDESHOW*/
+
+	#slideshow {
+		position: relative;
+		height: 100vh;
+		width: 100vw;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	#slideshow div {
+		display: none;
+		margin: 0 auto;
+		background-color: white;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	#slideshow img {
+		z-index: 8;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		opacity: .94;
+		filter: brightness(60%);
+
+	}
+
+	.name {
+		position: absolute;
+		left: 5vw;
+		top: 40vh;
+		z-index: 10;
+		display: inline-block;
+	}
+
+	.name h1 {
+		color: white;
+		font-family: Chivo, sans-serif; 
+		font-size: 8vw;
+		letter-spacing: .01em;
+		display: inline-block;
+	}
+
+	/*PROJECTS PAGE*/
+
+
+	.projects {
+		overflow: auto;
+		width: 80vw;
+		height: 70vh;
+		margin-left: 10vw;
+		margin-top: 14vh;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.projpic {
+		height: 75%;
+		margin-bottom: 1em;
+	}
+
+	/*ABOUT ME PAGE */
+
+	.info {
+		display: inline-block;
+		overflow: auto;
+		width: 100vw;
+		height: 82vh;
+	}
+
+	.left {
+		margin-top: 14vh;
+		height: 100vh;
+		width: 80vw;
+		margin-left: 10vw;
+	}
+
+	.right {
+		margin-top: 4vh;
+		height: 82vh;
+		width: 80vw;
+		margin-left: 10vw;
+		display: block;
+		/*margin-bottom: 20%;*/
+	}
+
+	.right p{
+		height: auto;
+	}
+
+	.button{
+			height: 10%;
+	    	background-color: rgb(60, 50, 73); /* Green */
+	    	border: none;
+	    	color: white;
+	    	padding: 15px 32px;
+	    	text-align: center;
+	    	text-decoration: none;
+	    	display: inline-block;
+	    	font-size: 16px;
+	}
+
+	.button:hover {
+		cursor: pointer;
+	}
+
+	/*CONTACT PAGE*/
+
+	.contact {
+		display: block;
+		width: 80vw;
+		height: 68vh;
+		margin-top: 14vh;
+		margin-left: 10vw;
+		text-align: center;
+		overflow: auto;
+		background-image: url('../images/sunset.jpg');
+		background: linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.8)), url('../images/sunset.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 80% 80%;
+
+	}
+
+	.basic {
+		display: block;
+		height: auto;
+	}
+	form {
+		width: 80vw;
+		display: block;
+		height: 80vh;
+	}
+
+	form div {
+		display: block;
+		height: auto;
+		text-align: center;
+		background-color: rgba(60, 50, 73, 0.63);
+		padding: 3%;
+		border-radius: 2%;
+		width: 75vw;
+		color: white;
+	}
+
+	.contact p a{
+		color: red;
+	}
+	.asterisk {
+		color: red;
+		font-size: 130%;
+	}
+
+	::-webkit-input-placeholder {
+		text-align: center;
+	}
+	::-moz-placeholder {
+		text-align: center;
+	}
+	:-ms-placeholder {
+		text-align: center;
+	}
+
+	.form_submit {
+		height: 10%;
+	}
+
+	.form_submit input {
+		height: 100%;
+	    background-color: rgb(60, 50, 73); 
+	    border: none;
+	    color: white;
+	    padding: 15px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 16px;
+	}
+
+	/* HBO PAGE */
+
+	/*HBO basic info section*/
+	.hbo {
+		width: 100vw;
+		height: 70vh;
+		margin-top: 14vh;
+		overflow: auto;
+	}
+
+	.hbo_info {
+		text-align: center;
+		border: 2px solid black;
+		border-radius: 3%;
+		width: 80vw;
+		margin-left: 10vw;
+		height: 20vh;
+		margin-bottom: 2%;
+	}
+
+	.hbo_info  h1 {
+		height: 10vh;
+		font-size: 450%;
+	}
+
+	.date {
+		font-size: 200%
+	}
+
+	.icons {
+		width: 80vw;
+		height: auto;
+		margin-left: 10vw;
+		display: inline-block;
+		margin-bottom: 2vh;
+		border-bottom-color: black;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;  
+	}
+
+	.icons div {
+		display: block;
+	}
+
+	.font {
+		font-size: 125%;
+		height: 10%;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.text {
+		width: 100%;
+		height: 60%;
+	}
+	.project {
+		width: 80vw;
+		height: 60%;
+		text-align: center;
+		margin-bottom: 4vh;
+	}
+
+	.timeframe {
+		width: 80vw;
+		height: 60%;
+		text-align: center;
+		margin-bottom: 4vh;
+	}
+
+	.process {
+		width: 80vw;
+		height: 60%;
+		text-align: center;
+		margin-bottom: 4vh;
+	}
+
+	.hi-icon {
+		font-size: 800%;
+	}
+
+	h2, h1 {
+		color: rgba(60, 50, 73, .8);
+	}
+
+	/*HBO Interaction section*/
+	.outline {
+		height: auto;
+		width: 80vw;
+		margin-left: 10vw;
+		margin-bottom: 2vh;
+		border-bottom-color: black;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;  
+	}
+
+	.outline ul {
+		margin-left: 10%;
+	}
+
+
+	.outline p {
+		text-align: left;
+	}
+
+	/*Pages no yet created*/
+	.layout {
+		height: 82vh;
+		width: 80vw;
+		margin-left: 10vw;
+		margin-bottom: 2vh;
+		margin-top: 38vh;
+		text-align: center;
+	}
+
+	.layout h1 {
+		height: 12%;
+	}
+
+	.i3research h1 {
+		height: 38%;
+	}
+
+	.layout h2 {
+		color: black;
+	}
+
+	/*FOOTER*/
+	footer {
+		background-color: rgba(60, 50, 73, 0.85);
+		position: fixed;
+		height: 16%;
+		width: 100%;
+		bottom:0;
+		z-index: 15;
+	}
+
+	footer div {
+		display: inline-block;
+		width: 19%;
+		height: 0;
+		margin-top: 2em;
+	}
+
+	footer div a {
+		color: white;
+		font-size: 2.5em;
+		display: inline-block;
+		text-align: center;
+
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
 	/*HEADER*/
 
 	/*LOGO*/
@@ -545,7 +967,7 @@ footer div a {
 
 }
 
-@media only screen and (min-device-width: 1025px) {
+@media only screen and (min-width: 1025px) {
 	/*HEADER*/
 	
 	/*LOGO*/
