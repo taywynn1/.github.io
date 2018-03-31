@@ -438,7 +438,7 @@ footer div {
 
 footer div a {
 	color: white;
-	font-size: 2.4em;
+	font-size: 2.2em;
 	display: inline-block;
 	text-align: center;
 
@@ -882,7 +882,7 @@ footer div a {
 
 	footer div a {
 		color: white;
-		font-size: 2.4em;
+		font-size: 2.2em;
 		display: inline-block;
 		text-align: center;
 
@@ -935,6 +935,8 @@ footer div a {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		width: 80vw;
+		height: 52vh;
 	}
 
 	.projpic {
@@ -989,7 +991,15 @@ footer div a {
 		display: flex;
 	}
 
+	.hbo {
+		width: 100vw;
+		height: 50vh;
+	}
 
+	.contact {
+		width: 80vw;
+		height: 48vh;
+	}
 }
 
 @media only screen and (min-width: 824px) and (max-width: 1023px) and (orientation: landscape) {
