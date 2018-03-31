@@ -96,7 +96,7 @@ header {
 }
 
 .NavDropDown li a.current-page {
-	color: #b30000;
+	color: #a10404;
 	text-decoration: underline dashed white;
 }
 
@@ -108,7 +108,7 @@ header {
 }
 
 .NavDropDown li a:hover {
-	color: #b30000;
+	color: #a10404;
 }
 
 /*SLIDESHOW*/
@@ -541,7 +541,7 @@ footer div a {
 	}
 
 	.NavDropDown li a.current-page {
-		color: #b30000;
+		color: #a10404;
 		text-decoration: underline dashed white;
 	}
 
@@ -553,7 +553,7 @@ footer div a {
 	}
 
 	.NavDropDown li a:hover {
-		color: #b30000;
+		color: #a10404;
 	}
 
 	/*SLIDESHOW*/
