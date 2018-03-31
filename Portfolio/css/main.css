@@ -156,7 +156,6 @@ header {
 	font-size: 8vw;
 	letter-spacing: .01em;
 	display: inline-block;
-	b
 }
 
 /*PROJECTS PAGE*/
@@ -263,7 +262,6 @@ form div {
 
 .contact p a{
 	color: #890202;
-	background-color: black;
 }
 .asterisk {
 	color: #890202;
@@ -709,7 +707,6 @@ footer div a {
 
 	.contact p a{
 		color: #890202;
-		background-color: black;
 	}
 	.asterisk {
 		color: #890202;
