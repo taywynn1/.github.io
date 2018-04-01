@@ -592,7 +592,7 @@ footer {
     position: relative;
     height: $standard-height;
     width: $standard-width;
-    -webkit-overflow-scrolling: touch;
+    background-color: black;
     div {
       display: none;
       margin: 0 auto;
