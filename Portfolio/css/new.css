@@ -102,11 +102,11 @@ header {
   text-align: center;
 }
 .NavDropDown li a.current-page {
-  color: black;
+  color: #a10404;
   text-decoration: underline dashed white;
 }
 .NavDropDown li a:hover {
-  color: black;
+  color: #a10404;
 }
 
 /*SLIDESHOW*/
@@ -189,6 +189,7 @@ header {
   width: 80vw;
   margin-left: 10vw;
   display: block;
+  /*margin-bottom: 20%;*/
 }
 
 .right p {
@@ -198,6 +199,7 @@ header {
 .button {
   height: 10%;
   background-color: #3c3249;
+  /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -287,6 +289,7 @@ form div {
 }
 
 /* HBO PAGE */
+/*HBO basic info section*/
 .hbo {
   width: 100vw;
   height: 70vh;
@@ -369,6 +372,7 @@ h2, h1 {
   color: rgba(60, 50, 73, 0.8);
 }
 
+/*HBO Interaction section*/
 .outline {
   height: auto;
   width: 80vw;
@@ -387,7 +391,7 @@ h2, h1 {
   text-align: left;
 }
 
-/*PROJECT PAGES NOT YET CREATED*/
+/*Pages no yet created*/
 .layout {
   height: 82vh;
   width: 80vw;
@@ -540,11 +544,11 @@ footer div a {
     text-align: center;
   }
   .NavDropDown li a.current-page {
-    color: black;
+    color: #a10404;
     text-decoration: underline dashed white;
   }
   .NavDropDown li a:hover {
-    color: black;
+    color: #a10404;
   }
 
   /*SLIDESHOW*/

@@ -1,10 +1,26 @@
+
+$standard-width: 100vw; 
+$standard-height: 100vh;
+$white: white;
+$alignment: center;
+$purple: fade-out(#3C3249, .15);
+$gray: fade-out(#696969, .15);
+$hover-color: black;
+
+@mixin position($standard-position: fixed) {
+  position: $standard-position !important;
+  -webkit-position: $standard-position !important;
+  -moz-position: $standard-position !important;
+  -ms-position: $standard-position !important;
+  -o-position: $standard-position !important;
+}
+
 * {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
 }
-
 body {
   font-size: 100%;
   font-family: Chivo, sans-serif;
@@ -23,135 +39,151 @@ html {
   overflow: hidden !important;
   position: fixed !important;
   -webkit-text-size-adjust: 100%;
-}
+ }
 
 /*HEADER*/
+
 header {
   height: 12vh !important;
-  background-color: rgba(105, 105, 105, 0.85);
-  position: fixed !important;
-  -webkit-position: fixed !important;
-  -moz-position: fixed !important;
-  -ms-position: fixed !important;
-  -o-position: fixed !important;
-  width: 80vw;
-  left: 10vw;
+  background-color: $gray;
+  @include position;
+  width: $standard-width/1.25;
+  left: $standard-width/10;
   top: 0;
   z-index: 15;
 }
 
 /*LOGO*/
+
 .logo {
-  margin-top: 1.8em;
-  margin-left: 1em;
-  margin-bottom: 0;
+  margin : {
+    top: 1.8em;
+    left: 1em;
+    bottom: 0;
+  }
   display: inline-block;
   width: 80%;
   height: 55%;
-}
-.logo a {
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 2.3em;
-  font-family: Chivo, sans-serif;
-  font-weight: 400;
+  a {
+    color: $white;
+    text : {
+      decoration: none;
+      align: $alignment;
+      transform: capitalize;
+    }
+    font : {
+      size: 2.3em;
+      family: Chivo, sans-serif;
+      weight: 400;
+    }
+  }
 }
 
 /*NAVIGATION MENU*/
+
 .top {
   display: inline-block;
   width: 10%;
   height: 59%;
-  margin-top: 1.8em;
-  margin-bottom: 0;
+  margin : {
+    top: 1.8em;
+    bottom: 0;
+  }
 }
 
 .navicon {
-  color: white;
+  color: $white;
   font-size: 2.2em;
-  text-align: center;
-}
-.navicon:hover {
-  cursor: pointer;
+  text-align: $alignment;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .NavDropDown {
   list-style-type: none;
   padding: 0;
-  color: white;
+  color: $white;
   margin: 0;
   display: none;
   height: 210%;
-}
-.NavDropDown li {
-  padding-top: 0.5em;
-  padding-bottom: 0;
-  background-color: rgba(60, 50, 73, 0.85);
-  font-family: Chivo, sans-serif;
-  margin: 0;
-  display: block;
-  height: 20%;
-  text-align: center;
-}
-.NavDropDown li a {
-  font-size: 1.5em;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-.NavDropDown li a.current-page {
-  color: black;
-  text-decoration: underline dashed white;
-}
-.NavDropDown li a:hover {
-  color: black;
+  li {
+    padding : {
+      top: .5em;
+      bottom: 0;
+    }
+    background-color: $purple;
+    font-family: Chivo, sans-serif;
+    margin: 0;
+    display: block;
+    height: 20%;
+    text-align: $alignment;
+    a {
+      &.current-page {
+        color: $hover-color;
+        text-decoration: underline dashed white;
+      }
+      font-size: 1.5em;
+      color: $white;
+      text : {
+        decoration: none;
+        align: $alignment;
+      }
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
 }
 
 /*SLIDESHOW*/
+
 #slideshow {
   position: relative;
-  height: 100vh;
-  width: 100vw;
+  height: $standard-height;
+  width: $standard-width;
   -webkit-overflow-scrolling: touch;
-}
-#slideshow div {
-  display: none;
-  margin: 0 auto;
-  background-color: black;
-  width: 100vw;
-  height: 100vh;
-}
-#slideshow img {
-  z-index: 8;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0.94;
-  filter: brightness(60%);
-  background-color: black;
+  div {
+    display: none;
+    margin: 0 auto;
+    background-color: black;
+    width: $standard-width;
+    height: $standard-height;
+  }
+  img {
+    z-index: 8;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $standard-width;
+    height: $standard-height;
+    opacity: .94;
+    filter: brightness(60%);
+    background-color: black;
+  }
 }
 
 .name {
   position: absolute;
-  left: 5vw;
-  top: 40vh;
+  left: $standard-width/20;
+  top: $standard-height/2.5;
   z-index: 10;
   display: inline-block;
-}
-.name h1 {
-  color: white;
-  font-family: Chivo, sans-serif;
-  font-size: 8vw;
-  letter-spacing: 0.01em;
-  display: inline-block;
+  h1 {
+    color: $white;
+    font : {
+      family: Chivo, sans-serif;
+      size: $standard-width/12.5;
+    }
+    letter-spacing: .01em;
+    display: inline-block;
+  }
 }
 
 /*PROJECTS PAGE*/
+
+
 .projects {
   overflow: auto;
   width: 80vw;
@@ -169,6 +201,7 @@ header {
 }
 
 /*ABOUT ME PAGE */
+
 .info {
   display: inline-block;
   overflow: auto;
@@ -191,13 +224,13 @@ header {
   display: block;
 }
 
-.right p {
+.right p{
   height: auto;
 }
 
-.button {
+.button{
   height: 10%;
-  background-color: #3c3249;
+  background-color: rgb(60, 50, 73); 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -212,6 +245,7 @@ header {
 }
 
 /*CONTACT PAGE*/
+
 .contact {
   display: block;
   width: 80vw;
@@ -220,18 +254,18 @@ header {
   margin-left: 10vw;
   text-align: center;
   overflow: auto;
-  background-image: url("../images/sunset.jpg");
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8)), url("../images/sunset.jpg");
+  background-image: url('../images/sunset.jpg');
+  background: linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.8)), url('../images/sunset.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 80% 80%;
+
 }
 
 .basic {
   display: block;
   height: auto;
 }
-
 form {
   width: 80vw;
   display: block;
@@ -249,10 +283,9 @@ form div {
   color: white;
 }
 
-.contact p a {
+.contact p a{
   color: #890202;
 }
-
 .asterisk {
   color: #890202;
   font-size: 130%;
@@ -261,11 +294,9 @@ form div {
 ::-webkit-input-placeholder {
   text-align: center;
 }
-
 ::-moz-placeholder {
   text-align: center;
 }
-
 :-ms-placeholder {
   text-align: center;
 }
@@ -276,17 +307,18 @@ form div {
 
 .form_submit input {
   height: 100%;
-  background-color: #3c3249;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+    background-color: rgb(60, 50, 73); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 /* HBO PAGE */
+
 .hbo {
   width: 100vw;
   height: 70vh;
@@ -304,13 +336,13 @@ form div {
   margin-bottom: 2%;
 }
 
-.hbo_info h1 {
+.hbo_info  h1 {
   height: 10vh;
   font-size: 450%;
 }
 
 .date {
-  font-size: 200%;
+  font-size: 200%
 }
 
 .icons {
@@ -321,7 +353,7 @@ form div {
   margin-bottom: 2vh;
   border-bottom-color: black;
   border-bottom-width: 1px;
-  border-bottom-style: solid;
+  border-bottom-style: solid;  
 }
 
 .icons div {
@@ -339,7 +371,6 @@ form div {
   width: 100%;
   height: 60%;
 }
-
 .project {
   width: 80vw;
   height: 60%;
@@ -366,7 +397,7 @@ form div {
 }
 
 h2, h1 {
-  color: rgba(60, 50, 73, 0.8);
+  color: rgba(60, 50, 73, .8);
 }
 
 .outline {
@@ -376,12 +407,13 @@ h2, h1 {
   margin-bottom: 2vh;
   border-bottom-color: black;
   border-bottom-width: 1px;
-  border-bottom-style: solid;
+  border-bottom-style: solid;  
 }
 
 .outline ul {
   margin-left: 10%;
 }
+
 
 .outline p {
   text-align: left;
@@ -410,29 +442,26 @@ h2, h1 {
 }
 
 /*FOOTER*/
+
 footer {
-  background-color: rgba(60, 50, 73, 0.85);
-  position: fixed !important;
-  -webkit-position: fixed !important;
-  -moz-position: fixed !important;
-  -ms-position: fixed !important;
-  -o-position: fixed !important;
+  background-color: $purple;
+  @include position;
   height: 16% !important;
   width: 100%;
   bottom: 0;
   z-index: 15;
-}
-footer div {
-  display: inline-block;
-  width: 18%;
-  height: 0;
-  margin-top: 2em;
-}
-footer div a {
-  color: white;
-  font-size: 2.2em;
-  display: inline-block;
-  text-align: center;
+  div {
+    display: inline-block;
+    width: 18%;
+    height: 0;
+    margin-top: 2em;
+    a {
+      color: $white;
+      font-size: 2.2em;
+      display: inline-block;
+      text-align: $alignment;
+    }
+  }
 }
 
 @media only screen and (max-width: 823px) and (orientation: landscape) {
@@ -442,7 +471,6 @@ footer div a {
     margin: 0;
     padding: 0;
   }
-
   body {
     font-size: 100%;
     font-family: Chivo, sans-serif;
@@ -464,132 +492,148 @@ footer div a {
   }
 
   /*HEADER*/
+
   header {
     height: 12vh !important;
-    background-color: rgba(105, 105, 105, 0.85);
-    position: fixed !important;
-    -webkit-position: fixed !important;
-    -moz-position: fixed !important;
-    -ms-position: fixed !important;
-    -o-position: fixed !important;
-    width: 80vw;
-    left: 10vw;
+    background-color: $gray;
+    @include position;
+    width: $standard-width/1.25;
+    left: $standard-width/10;
     top: 0;
     z-index: 15;
   }
 
   /*LOGO*/
+
   .logo {
-    margin-top: 1.8em;
-    margin-left: 1em;
-    margin-bottom: 0;
+    margin : {
+      top: 1.8em;
+      left: 1em;
+      bottom: 0;
+    }
     display: inline-block;
     width: 80%;
     height: 55%;
-  }
-  .logo a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 2.3em;
-    font-family: Chivo, sans-serif;
-    font-weight: 400;
+    a {
+      color: $white;
+      text : {
+        decoration: none;
+        align: $alignment;
+        transform: capitalize;
+      }
+      font : {
+        size: 2.3em;
+        family: Chivo, sans-serif;
+        weight: 400;
+      }
+    }
   }
 
   /*NAVIGATION MENU*/
+
   .top {
     display: inline-block;
     width: 10%;
     height: 59%;
-    margin-top: 1.8em;
-    margin-bottom: 0;
+    margin : {
+      top: 1.8em;
+      bottom: 0;
+    }
   }
 
   .navicon {
-    color: white;
+    color: $white;
     font-size: 2.2em;
-    text-align: center;
-  }
-  .navicon:hover {
-    cursor: pointer;
+    text-align: $alignment;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .NavDropDown {
     list-style-type: none;
     padding: 0;
-    color: white;
+    color: $white;
     margin: 0;
     display: none;
     height: 210%;
-  }
-  .NavDropDown li {
-    padding-top: 0.5em;
-    padding-bottom: 0;
-    background-color: rgba(60, 50, 73, 0.85);
-    font-family: Chivo, sans-serif;
-    margin: 0;
-    display: block;
-    height: 20%;
-    text-align: center;
-  }
-  .NavDropDown li a {
-    font-size: 1.5em;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-  }
-  .NavDropDown li a.current-page {
-    color: black;
-    text-decoration: underline dashed white;
-  }
-  .NavDropDown li a:hover {
-    color: black;
+    li {
+      padding : {
+        top: .5em;
+        bottom: 0;
+      }
+      background-color: $purple;
+      font-family: Chivo, sans-serif;
+      margin: 0;
+      display: block;
+      height: 20%;
+      text-align: $alignment;
+      a {
+        &.current-page {
+          color: $hover-color;
+          text-decoration: underline dashed white;
+        }
+        font-size: 1.5em;
+        color: $white;
+        text : {
+          decoration: none;
+          align: $alignment;
+        }
+        &:hover {
+          color: $hover-color;
+        }
+      }
+    }
   }
 
   /*SLIDESHOW*/
+
   #slideshow {
     position: relative;
-    height: 100vh;
-    width: 100vw;
+    height: $standard-height;
+    width: $standard-width;
     -webkit-overflow-scrolling: touch;
-  }
-  #slideshow div {
-    display: none;
-    margin: 0 auto;
-    background-color: black;
-    width: 100vw;
-    height: 100vh;
-  }
-  #slideshow img {
-    z-index: 8;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    opacity: 0.94;
-    filter: brightness(60%);
-    background-color: black;
+    div {
+      display: none;
+      margin: 0 auto;
+      background-color: black;
+      width: $standard-width;
+      height: $standard-height;
+    }
+    img {
+      z-index: 8;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: $standard-width;
+      height: $standard-height;
+      opacity: .94;
+      filter: brightness(60%);
+      background-color: black;
+    }
   }
 
   .name {
     position: absolute;
-    left: 5vw;
-    top: 40vh;
+    left: $standard-width/20;
+    top: $standard-height/2.5;
     z-index: 10;
     display: inline-block;
-  }
-  .name h1 {
-    color: white;
-    font-family: Chivo, sans-serif;
-    font-size: 8vw;
-    letter-spacing: 0.01em;
-    display: inline-block;
+    h1 {
+      color: $white;
+      font : {
+        family: Chivo, sans-serif;
+        size: $standard-width/12.5;
+      }
+      letter-spacing: .01em;
+      display: inline-block;
+    }
   }
 
   /*PROJECTS PAGE*/
+
+
   .projects {
     overflow: auto;
     width: 80vw;
@@ -606,6 +650,7 @@ footer div a {
   }
 
   /*ABOUT ME PAGE */
+
   .info {
     display: inline-block;
     overflow: auto;
@@ -628,21 +673,20 @@ footer div a {
     display: block;
   }
 
-  .right p {
+  .right p{
     height: auto;
   }
 
-  .button {
+  .button{
     height: 14%;
-    background-color: #3c3249;
-    /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+      background-color: rgb(60, 50, 73); /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
   }
 
   .button:hover {
@@ -650,6 +694,7 @@ footer div a {
   }
 
   /*CONTACT PAGE*/
+
   .contact {
     display: block;
     width: 80vw;
@@ -658,18 +703,18 @@ footer div a {
     margin-left: 10vw;
     text-align: center;
     overflow: auto;
-    background-image: url("../images/sunset.jpg");
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8)), url("../images/sunset.jpg");
+    background-image: url('../images/sunset.jpg');
+    background: linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.8)), url('../images/sunset.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 80% 80%;
+
   }
 
   .basic {
     display: block;
     height: auto;
   }
-
   form {
     width: 80vw;
     display: block;
@@ -687,10 +732,9 @@ footer div a {
     color: white;
   }
 
-  .contact p a {
+  .contact p a{
     color: #890202;
   }
-
   .asterisk {
     color: #890202;
     font-size: 130%;
@@ -699,11 +743,9 @@ footer div a {
   ::-webkit-input-placeholder {
     text-align: center;
   }
-
   ::-moz-placeholder {
     text-align: center;
   }
-
   :-ms-placeholder {
     text-align: center;
   }
@@ -714,17 +756,18 @@ footer div a {
 
   .form_submit input {
     height: 100%;
-    background-color: #3c3249;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+      background-color: rgb(60, 50, 73); 
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
   }
 
   /* HBO PAGE */
+
   /*HBO basic info section*/
   .hbo {
     width: 100vw;
@@ -743,13 +786,13 @@ footer div a {
     margin-bottom: 2%;
   }
 
-  .hbo_info h1 {
+  .hbo_info  h1 {
     height: 10vw;
     font-size: 450%;
   }
 
   .date {
-    font-size: 200%;
+    font-size: 200%
   }
 
   .icons {
@@ -760,7 +803,7 @@ footer div a {
     margin-bottom: 2vh;
     border-bottom-color: black;
     border-bottom-width: 1px;
-    border-bottom-style: solid;
+    border-bottom-style: solid;  
   }
 
   .icons div {
@@ -778,7 +821,6 @@ footer div a {
     width: 100%;
     height: 60%;
   }
-
   .project {
     width: 80vw;
     height: 60%;
@@ -805,7 +847,7 @@ footer div a {
   }
 
   h2, h1 {
-    color: rgba(60, 50, 73, 0.8);
+    color: rgba(60, 50, 73, .8);
   }
 
   /*HBO Interaction section*/
@@ -816,12 +858,13 @@ footer div a {
     margin-bottom: 2vh;
     border-bottom-color: black;
     border-bottom-width: 1px;
-    border-bottom-style: solid;
+    border-bottom-style: solid;  
   }
 
   .outline ul {
     margin-left: 10%;
   }
+
 
   .outline p {
     text-align: left;
@@ -850,40 +893,39 @@ footer div a {
   }
 
   /*FOOTER*/
+
   footer {
-    background-color: rgba(60, 50, 73, 0.85);
-    position: fixed !important;
-    -webkit-position: fixed !important;
-    -moz-position: fixed !important;
-    -ms-position: fixed !important;
-    -o-position: fixed !important;
+    background-color: $purple;
+    @include position;
     height: 16% !important;
     width: 100%;
     bottom: 0;
     z-index: 15;
-  }
-  footer div {
-    display: inline-block;
-    width: 18%;
-    height: 0;
-    margin-top: 2em;
-  }
-  footer div a {
-    color: white;
-    font-size: 2.2em;
-    display: inline-block;
-    text-align: center;
+    div {
+      display: inline-block;
+      width: 18%;
+      height: 0;
+      margin-top: 2em;
+      a {
+        color: $white;
+        font-size: 2.2em;
+        display: inline-block;
+        text-align: $alignment;
+      }
+    }
   }
 }
+
 @media only screen and (min-width: 768px) {
   /*HEADER*/
+
   /*LOGO*/
   .logo {
     display: block;
     width: 100%;
     height: 40%;
     text-align: center;
-    margin-top: 0.5em;
+    margin-top: .5em;
   }
 
   /*NAVIGATION BAR*/
@@ -892,12 +934,12 @@ footer div a {
     visibility: visible;
     width: 100%;
     text-align: center;
-    margin-top: 0.75em;
+    margin-top: .75em;
     height: 35%;
   }
 
   .NavDropDown li {
-    padding: 0.5em;
+    padding: .5em;
     background-color: transparent;
     display: inline;
   }
@@ -911,7 +953,9 @@ footer div a {
     display: none;
   }
 
+
   /*PROJECTS PAGE */
+
   .projects {
     display: flex;
     flex-direction: row;
@@ -922,8 +966,8 @@ footer div a {
   .projpic {
     width: 46.9%;
   }
-
-  /*ABOUT ME PAGE */
+  
+   /*ABOUT ME PAGE */
   .info {
     display: flex;
   }
@@ -939,7 +983,7 @@ footer div a {
     height: 86vh;
   }
 
-  .right p {
+  .right p{
     width: 80%;
     height: auto;
   }
@@ -949,6 +993,7 @@ footer div a {
   }
 
   /*Forms page */
+
   form div {
     text-align: left;
   }
@@ -956,29 +1001,33 @@ footer div a {
   ::-webkit-input-placeholder {
     text-align: left;
   }
-
+  
   ::-moz-placeholder {
-    text-align: left;
+  text-align: left;
   }
-
+  
   :-ms-placeholder {
-    text-align: left;
+  text-align: left;
   }
 
   /*HBO project page */
   .icons {
     display: flex;
   }
+
+
 }
+
 @media only screen and (min-width: 824px) and (max-width: 1023px) and (orientation: landscape) {
   /*HEADER*/
+
   /*LOGO*/
   .logo {
     display: block;
     width: 100%;
     height: 40%;
     text-align: center;
-    margin-top: 0.5em;
+    margin-top: .5em;
   }
 
   /*NAVIGATION BAR*/
@@ -987,12 +1036,12 @@ footer div a {
     visibility: visible;
     width: 100%;
     text-align: center;
-    margin-top: 0.75em;
+    margin-top: .75em;
     height: 35%;
   }
 
   .NavDropDown li {
-    padding: 0.5em;
+    padding: .5em;
     background-color: transparent;
     display: inline;
   }
@@ -1006,7 +1055,9 @@ footer div a {
     display: none;
   }
 
+
   /*PROJECTS PAGE */
+
   .projects {
     display: flex;
     flex-direction: row;
@@ -1017,8 +1068,8 @@ footer div a {
   .projpic {
     width: 46.9%;
   }
-
-  /*ABOUT ME PAGE */
+  
+   /*ABOUT ME PAGE */
   .info {
     display: flex;
   }
@@ -1034,7 +1085,7 @@ footer div a {
     height: 86vh;
   }
 
-  .right p {
+  .right p{
     width: 80%;
     height: auto;
   }
@@ -1044,6 +1095,7 @@ footer div a {
   }
 
   /*Forms page */
+
   form div {
     text-align: left;
   }
@@ -1051,22 +1103,26 @@ footer div a {
   ::-webkit-input-placeholder {
     text-align: left;
   }
-
+  
   ::-moz-placeholder {
-    text-align: left;
+  text-align: left;
   }
-
+  
   :-ms-placeholder {
-    text-align: left;
+  text-align: left;
   }
 
   /*HBO project page */
   .icons {
     display: flex;
   }
+
+
 }
+
 @media only screen and (min-width: 1024px) {
   /*HEADER*/
+  
   /*LOGO*/
   .logo {
     display: inline-block;
@@ -1083,9 +1139,9 @@ footer div a {
   }
 
   .NavDropDown li {
-    padding: 0.5em;
-    background-color: transparent;
-    display: inline;
+  padding: .5em;
+  background-color: transparent;
+  display: inline;
   }
 
   .NavDropDown li a {
@@ -1102,6 +1158,7 @@ footer div a {
   }
 
   /*ABOUT ME */
+   
   .left {
     height: 72vh;
     flex: 40%;
@@ -1114,6 +1171,8 @@ footer div a {
   }
 
   /*HBO Go project page */
+
+
   .hbo_interviews img {
     width: 75%;
     height: auto;
@@ -1142,4 +1201,6 @@ footer div a {
     width: 75%;
     height: auto;
   }
+
+
 }
