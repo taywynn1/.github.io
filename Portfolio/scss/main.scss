@@ -146,7 +146,6 @@ header {
   div {
     display: none;
     margin: 0 auto;
-    background-color: black;
     width: $standard-width;
     height: $standard-height;
   }
@@ -160,7 +159,6 @@ header {
     height: $standard-height;
     opacity: .94;
     filter: brightness(60%);
-    background-color: black;
   }
 }
 
@@ -595,8 +593,6 @@ footer {
     background-color: transparent;
     div {
       display: none;
-      margin: 0 auto;
-      background-color: black;
       width: $standard-width;
       height: $standard-height;
     }
@@ -610,7 +606,6 @@ footer {
       height: $standard-height;
       opacity: .94;
       filter: brightness(60%);
-      background-color: black;
     }
   }
 
