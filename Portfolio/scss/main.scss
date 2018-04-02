@@ -141,8 +141,7 @@ header {
 #slideshow {
   position: relative;
   height: $standard-height;
-  width: $standard-width;
-  background-color: white; 
+  width: $standard-width; 
   div {
     display: none;
     margin: 0 auto;
@@ -592,7 +591,6 @@ footer {
     position: relative;
     height: $standard-height;
     width: $standard-width;
-    background-color: white;
     div {
       display: none;
       margin: 0 auto;
