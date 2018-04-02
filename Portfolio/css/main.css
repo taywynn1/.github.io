@@ -114,6 +114,7 @@ header {
   position: relative;
   height: 100vh;
   width: 100vw;
+  background-color: white;
 }
 #slideshow div {
   display: none;
@@ -551,6 +552,7 @@ footer div a {
     position: relative;
     height: 100vh;
     width: 100vw;
+    background-color: white;
   }
   #slideshow div {
     display: none;
