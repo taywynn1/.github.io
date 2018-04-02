@@ -42,6 +42,7 @@ header {
 
 /*LOGO*/
 .logo {
+  -moz-margin-top: 1.8em;
   margin-top: 2em;
   margin-left: 1em;
   margin-bottom: 0;
@@ -64,6 +65,7 @@ header {
   display: inline-block;
   width: 10%;
   height: 59%;
+  -moz-margin-top: 1.8em;
   margin-top: 2em;
   margin-bottom: 0;
 }
