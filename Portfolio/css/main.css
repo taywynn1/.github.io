@@ -68,6 +68,7 @@ header {
   -moz-margin-top: 1.8em;
   margin-top: 2em;
   margin-bottom: 0;
+  margin-left: 0.5em;
 }
 
 .navicon {
@@ -428,7 +429,7 @@ footer div {
   display: inline-block;
   width: 18%;
   height: 0;
-  margin-top: 2.2em;
+  margin-top: 2.5em;
 }
 footer div a {
   color: white;
@@ -848,7 +849,7 @@ footer div a {
     display: inline-block;
     width: 18%;
     height: 0;
-    margin-top: 2.2em;
+    margin-top: 2.5em;
   }
   footer div a {
     color: white;
@@ -985,7 +986,7 @@ footer div a {
     display: inline-block;
     width: 19%;
     height: 0;
-    margin-top: 2.2em;
+    margin-top: 2.5em;
   }
   footer div a {
     color: white;
