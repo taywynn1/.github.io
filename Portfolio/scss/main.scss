@@ -187,7 +187,7 @@ header {
 .projects {
   overflow: auto;
   width: 80vw;
-  height: 82vh;
+  height: 72vh;
   margin-left: 10vw;
   margin-top: 14vh;
   display: flex;
@@ -195,9 +195,9 @@ header {
 }
 
 .projpic {
-  height: 75%;
-  -moz-height: 75%;
+  min-height: 60%;
   margin-bottom: 1em;
+  width: 100%;
 }
 
 /*ABOUT ME PAGE */
@@ -281,6 +281,8 @@ form div {
   border-radius: 2%;
   width: 75vw;
   color: black;
+  font-size: 130%;
+  font-weight: bold;
 }
 
 .contact p a{
@@ -430,11 +432,11 @@ h2, h1 {
 }
 
 .layout h1 {
-  height: 15%;
+  height: 25%;
 }
 
 .i3research h1 {
-  height: 38%;
+  height: 50%;
 }
 
 .layout h2 {
@@ -446,7 +448,7 @@ h2, h1 {
 footer {
   background-color: $purple;
   @include position;
-  height: 16% !important;
+  height: 16vh !important;
   width: 100%;
   bottom: 0;
   z-index: 15;
@@ -454,17 +456,17 @@ footer {
     display: inline-block;
     width: 18%;
     height: 0;
-    margin-top: 2em;
+    margin-top: 2.2em;
     a {
       color: $white;
-      font-size: 2.2em;
+      font-size: 2.5em;
       display: inline-block;
       text-align: $alignment;
     }
   }
 }
 
-@media only screen and (max-width: 823px) and (orientation: landscape) {
+@media only screen and (orientation: landscape) {
   * {
     height: 100%;
     width: 100%;
@@ -494,7 +496,7 @@ footer {
   /*HEADER*/
 
   header {
-    height: 12vh !important;
+    height: 12vw !important;
     background-color: $gray;
     @include position;
     width: $standard-width/1.25;
@@ -507,7 +509,7 @@ footer {
 
   .logo {
     margin : {
-      top: 1.8em;
+      top: 1.5em;
       left: 1em;
       bottom: 0;
     }
@@ -536,7 +538,7 @@ footer {
     width: 10%;
     height: 59%;
     margin : {
-      top: 1.8em;
+      top: 1.5em;
       bottom: 0;
     }
   }
@@ -556,7 +558,7 @@ footer {
     color: $white;
     margin: 0;
     display: none;
-    height: 210%;
+    height: 350%;
     li {
       padding : {
         top: .5em;
@@ -573,7 +575,7 @@ footer {
           color: $hover-color;
           text-decoration: underline dashed white;
         }
-        font-size: 1.5em;
+        font-size: 1.3em;
         color: $white;
         text : {
           decoration: none;
@@ -634,16 +636,17 @@ footer {
   .projects {
     overflow: auto;
     width: 80vw;
-    height: 42vh;
+    height: 72vh;
     margin-left: 10vw;
-    margin-top: 14vw;
+    margin-top: 14vh;
     display: flex;
     flex-direction: column;
   }
 
   .projpic {
-    height: 30vw;
+    min-height: 60%;
     margin-bottom: 1em;
+    width: 100%;
   }
 
   /*ABOUT ME PAGE */
@@ -652,11 +655,11 @@ footer {
     display: inline-block;
     overflow: auto;
     width: 100vw;
-    height: 75vh;
+    height: 82vh;
   }
 
   .left {
-    margin-top: 14vw;
+    margin-top: 14vh;
     height: 100vh;
     width: 80vw;
     margin-left: 10vw;
@@ -674,29 +677,13 @@ footer {
     height: auto;
   }
 
-  .button{
-    height: 14%;
-      background-color: rgb(60, 50, 73); /* Green */
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-  }
-
-  .button:hover {
-    cursor: pointer;
-  }
-
   /*CONTACT PAGE*/
 
   .contact {
     display: block;
     width: 80vw;
-    height: 42vh;
-    margin-top: 14vw;
+    height: 68vh;
+    margin-top: 14vh;
     margin-left: 10vw;
     text-align: center;
     overflow: auto;
@@ -748,7 +735,7 @@ footer {
   }
 
   .form_submit {
-    height: 12%;
+    height: 16%;
   }
 
   .form_submit input {
@@ -765,11 +752,10 @@ footer {
 
   /* HBO PAGE */
 
-  /*HBO basic info section*/
   .hbo {
     width: 100vw;
-    height: 45vh;
-    margin-top: 14vw;
+    height: 70vh;
+    margin-top: 14vh;
     overflow: auto;
   }
 
@@ -867,7 +853,7 @@ footer {
     text-align: left;
   }
 
-  /*Pages no yet created*/
+  /*Pages not yet created*/
   .layout {
     height: 82vh;
     width: 80vw;
@@ -878,11 +864,11 @@ footer {
   }
 
   .layout h1 {
-    height: 12%;
+    height: 25%;
   }
 
   .i3research h1 {
-    height: 42%;
+    height: 50%;
   }
 
   .layout h2 {
@@ -894,7 +880,7 @@ footer {
   footer {
     background-color: $purple;
     @include position;
-    height: 16% !important;
+    height: 16vh !important;
     width: 100%;
     bottom: 0;
     z-index: 15;
@@ -902,10 +888,10 @@ footer {
       display: inline-block;
       width: 18%;
       height: 0;
-      margin-top: 2em;
+      margin-top: .5em;
       a {
         color: $white;
-        font-size: 2.2em;
+        font-size: 2.5em;
         display: inline-block;
         text-align: $alignment;
       }
@@ -913,8 +899,47 @@ footer {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) and (orientation: portrait) {
   /*HEADER*/
+  header {
+  height: 12vh !important;
+  }
+
+  /*NAV BAR*/
+
+  .NavDropDown {
+    display: inline-block !important;
+    visibility: visible;
+    width: 100%;
+    text-align: center;
+    margin-top: .75em;
+    height: 35%;
+    li {
+      padding: .5em;
+      background-color: $purple;
+      font-family: Chivo, sans-serif;
+      margin: 0;
+      display: inline;
+      height: 20%;
+      text-align: $alignment;
+      a {
+        &.current-page {
+          color: $hover-color;
+          text-decoration: underline dashed white;
+        }
+        font-size: 2em;
+        color: $white;
+        display: inline;
+        text : {
+          decoration: none;
+          align: $alignment;
+        }
+        &:hover {
+          color: $hover-color;
+        }
+      }
+    }
+  }
 
   /*LOGO*/
   .logo {
@@ -925,26 +950,6 @@ footer {
     margin-top: .5em;
   }
 
-  /*NAVIGATION BAR*/
-  .NavDropDown {
-    display: inline-block !important;
-    visibility: visible;
-    width: 100%;
-    text-align: center;
-    margin-top: .75em;
-    height: 35%;
-  }
-
-  .NavDropDown li {
-    padding: .5em;
-    background-color: transparent;
-    display: inline;
-  }
-
-  .NavDropDown li a {
-    font-size: 1.5em;
-    display: inline;
-  }
 
   .top {
     display: none;
@@ -962,6 +967,7 @@ footer {
 
   .projpic {
     width: 46.9%;
+    height: 10%;
   }
   
    /*ABOUT ME PAGE */
@@ -1012,12 +1018,31 @@ footer {
     display: flex;
   }
 
+  footer {
+    background-color: $purple;
+    @include position;
+    height: 16vh !important;
+    width: 100%;
+    bottom: 0;
+    z-index: 15;
+    div {
+      display: inline-block;
+      width: 19%;
+      height: 0;
+      margin-top: .5em;
+      a {
+        color: $white;
+        font-size: 2.5em;
+        display: inline-block;
+        text-align: $alignment;
+      }
+    }
+  }
 
 }
 
-@media only screen and (min-width: 824px) and (max-width: 1023px) and (orientation: landscape) {
+@media only screen and (min-width: 767px) and (orientation: landscape) {
   /*HEADER*/
-
   /*LOGO*/
   .logo {
     display: block;
@@ -1037,15 +1062,16 @@ footer {
     height: 35%;
   }
 
-  .NavDropDown li {
-    padding: .5em;
-    background-color: transparent;
-    display: inline;
-  }
-
-  .NavDropDown li a {
-    font-size: 1.5em;
-    display: inline;
+  .NavDropDown {
+    li {
+      padding: .5em;
+      background-color: transparent;
+      display: inline;
+      a {
+        font-size: 2em;
+        display: inline;
+      }
+    }
   }
 
   .top {
@@ -1113,13 +1139,13 @@ footer {
   .icons {
     display: flex;
   }
-
-
 }
 
 @media only screen and (min-width: 1024px) {
   /*HEADER*/
-  
+  header {
+    height: 12vh !important;
+  }
   /*LOGO*/
   .logo {
     display: inline-block;
@@ -1130,19 +1156,18 @@ footer {
   }
 
   /*NAVIGATION BAR*/
+
   .NavDropDown {
     width: 60%;
     text-align: right;
-  }
-
-  .NavDropDown li {
-  padding: .5em;
-  background-color: transparent;
-  display: inline;
-  }
-
-  .NavDropDown li a {
-    font-size: 1.5em;
+    li {
+      padding: .5em;
+      background-color: transparent;
+      display: inline;
+      a {
+        font-size: 1.8em;
+      }
+    }
   }
 
   .top {
