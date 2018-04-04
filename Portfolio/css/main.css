@@ -99,7 +99,7 @@ header {
   text-align: center;
 }
 .NavDropDown li a {
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -156,7 +156,7 @@ header {
 .projects {
   overflow: auto;
   width: 80vw;
-  height: 72vh;
+  height: 74vh;
   margin-left: 10vw;
   margin-top: 14vh;
   display: flex;
@@ -174,7 +174,7 @@ header {
   display: inline-block;
   overflow: auto;
   width: 100vw;
-  height: 82vh;
+  height: 88vh;
 }
 
 .left {
@@ -216,7 +216,7 @@ header {
 .contact {
   display: block;
   width: 80vw;
-  height: 68vh;
+  height: 74vh;
   margin-top: 14vh;
   margin-left: 10vw;
   text-align: center;
@@ -420,7 +420,7 @@ footer {
   -moz-position: fixed !important;
   -ms-position: fixed !important;
   -o-position: fixed !important;
-  height: 14vh !important;
+  height: 12vh !important;
   width: 100%;
   bottom: 0;
   z-index: 15;
@@ -429,7 +429,7 @@ footer div {
   display: inline-block;
   width: 18%;
   height: 0;
-  margin-top: 2em;
+  margin-top: 1.5em;
 }
 footer div a {
   color: white;
@@ -537,7 +537,7 @@ footer div a {
     text-align: center;
   }
   .NavDropDown li a {
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -593,7 +593,7 @@ footer div a {
   .projects {
     overflow: auto;
     width: 80vw;
-    height: 72vh;
+    height: 74vh;
     margin-left: 10vw;
     margin-top: 14vh;
     display: flex;
@@ -611,7 +611,7 @@ footer div a {
     display: inline-block;
     overflow: auto;
     width: 100vw;
-    height: 82vh;
+    height: 88vh;
   }
 
   .left {
@@ -637,7 +637,7 @@ footer div a {
   .contact {
     display: block;
     width: 80vw;
-    height: 68vh;
+    height: 74vh;
     margin-top: 14vh;
     margin-left: 10vw;
     text-align: center;
@@ -840,7 +840,7 @@ footer div a {
     -moz-position: fixed !important;
     -ms-position: fixed !important;
     -o-position: fixed !important;
-    height: 14vh !important;
+    height: 12vh !important;
     width: 100%;
     bottom: 0;
     z-index: 15;
@@ -849,7 +849,7 @@ footer div a {
     display: inline-block;
     width: 18%;
     height: 0;
-    margin-top: 2em;
+    margin-top: 1.5em;
   }
   footer div a {
     color: white;
@@ -883,7 +883,7 @@ footer div a {
     text-align: center;
   }
   .NavDropDown li a {
-    font-size: 2em;
+    font-size: 1.4em;
     color: white;
     display: inline;
     text-decoration: none;
@@ -977,7 +977,7 @@ footer div a {
     -moz-position: fixed !important;
     -ms-position: fixed !important;
     -o-position: fixed !important;
-    height: 14vh !important;
+    height: 12vh !important;
     width: 100%;
     bottom: 0;
     z-index: 15;
@@ -986,7 +986,7 @@ footer div a {
     display: inline-block;
     width: 19%;
     height: 0;
-    margin-top: 2em;
+    margin-top: 1.5em;
   }
   footer div a {
     color: white;
@@ -1022,7 +1022,7 @@ footer div a {
     display: inline;
   }
   .NavDropDown li a {
-    font-size: 2em;
+    font-size: 1.4em;
     display: inline;
   }
 
@@ -1032,6 +1032,7 @@ footer div a {
 
   /*PROJECTS PAGE */
   .projects {
+    height: 74vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1115,7 +1116,7 @@ footer div a {
     display: inline;
   }
   .NavDropDown li a {
-    font-size: 1.8em;
+    font-size: 1.4em;
   }
 
   .top {
