@@ -56,27 +56,17 @@ header {
 /*LOGO*/
 
 .logo {
-  -moz-margin-top: 1.8em;
   margin : {
-    top: 2em;
+    top: 0;
     left: 1em;
     bottom: 0;
   }
   display: inline-block;
-  width: 80%;
-  height: 55%;
-  a {
-    color: $white;
-    text : {
-      decoration: none;
-      align: $alignment;
-      transform: capitalize;
-    }
-    font : {
-      size: 2.3em;
-      family: Chivo, sans-serif;
-      weight: 400;
-    }
+  width: 20%;
+  height: 100%;
+  img {
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -84,20 +74,20 @@ header {
 
 .top {
   display: inline-block;
-  width: 10%;
-  height: 59%;
-  -moz-margin-top: 1.8em;
+  width: 80%;
+  height: 60%;
   margin : {
-    top: 2em;
     bottom: 0;
-    left: .5em;
   }
 }
 
 .navicon {
   color: $white;
-  font-size: 2.2em;
-  text-align: $alignment;
+  font-size: 3.5em;
+  text-align: right;
+  position: absolute;
+  top: 15%;
+  right: 10%;
   &:hover {
     cursor: pointer;
   }
@@ -510,25 +500,16 @@ footer {
 
   .logo {
     margin : {
-      top: 2em;
-      left: .5em;
+      top: 0;
+      left: 1em;
       bottom: 0;
     }
     display: inline-block;
-    width: 80%;
-    height: 55%;
-    a {
-      color: $white;
-      text : {
-        decoration: none;
-        align: $alignment;
-        transform: capitalize;
-      }
-      font : {
-        size: 2.3em;
-        family: Chivo, sans-serif;
-        weight: 400;
-      }
+    width: 20%;
+    height: 100%;
+    img {
+      height: 100%;
+      width: 100%;
     }
   }
 
@@ -536,18 +517,20 @@ footer {
 
   .top {
     display: inline-block;
-    width: 10%;
-    height: 59%;
+    width: 80%;
+    height: 60%;
     margin : {
-      top: 2em;
       bottom: 0;
     }
   }
 
   .navicon {
     color: $white;
-    font-size: 2.2em;
-    text-align: $alignment;
+    font-size: 3.5em;
+    text-align: right;
+    position: absolute;
+    top: 15%;
+    right: 10%;
     &:hover {
       cursor: pointer;
     }
@@ -906,15 +889,32 @@ footer {
     height: 12vh !important;
   }
 
+  .logo {
+    margin : {
+      top: .5em;
+      bottom: 0;
+    }
+    display: block;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    img {
+      width: 10%;
+      visibility: visible;
+    }
+  }
+
   /*NAV BAR*/
 
   .NavDropDown {
     display: inline-block !important;
     visibility: visible;
-    width: 100%;
-    text-align: center;
-    margin-top: .75em;
+    padding: 0;
+    margin-top: .3em;
+    display: none;
     height: 35%;
+    width: 100%;
+    text-align: $alignment;
     li {
       padding: .5em;
       background-color: $purple;
@@ -928,7 +928,7 @@ footer {
           color: $hover-color;
           text-decoration: underline dashed white;
         }
-        font-size: 1.4em;
+        font-size: 1.6em;
         color: $white;
         display: inline;
         text : {
@@ -1048,9 +1048,13 @@ footer {
   .logo {
     display: block;
     width: 100%;
-    height: 40%;
+    height: 50%;
     text-align: center;
     margin-top: .5em;
+    img {
+      visibility: visible;
+      width: 10%;
+    }
   }
 
   /*NAVIGATION BAR*/
@@ -1059,17 +1063,14 @@ footer {
     visibility: visible;
     width: 100%;
     text-align: center;
-    margin-top: .75em;
+    margin-top: .3em;
     height: 35%;
-  }
-
-  .NavDropDown {
     li {
       padding: .5em;
       background-color: transparent;
       display: inline;
       a {
-        font-size: 1.4em;
+        font-size: 1.6em;
         display: inline;
       }
     }
@@ -1151,17 +1152,26 @@ footer {
   /*LOGO*/
   .logo {
     display: inline-block;
-    width: 35%;
+    width: 20%;
     text-align: left;
-    margin-top: 2.5em;
-    height: 50%;
+    margin-top: 0;
+    height: 100%;
+    img {
+    width: 100%;
+    height: 100%;
+    }
   }
+
 
   /*NAVIGATION BAR*/
 
   .NavDropDown {
-    width: 60%;
+    width: 74%;
     text-align: right;
+    display: inline-block;
+    position: absolute;
+    top: 64%;
+    right: 2%;
     li {
       padding: .5em;
       background-color: transparent;

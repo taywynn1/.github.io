@@ -42,39 +42,33 @@ header {
 
 /*LOGO*/
 .logo {
-  -moz-margin-top: 1.8em;
-  margin-top: 2em;
+  margin-top: 0;
   margin-left: 1em;
   margin-bottom: 0;
   display: inline-block;
-  width: 80%;
-  height: 55%;
+  width: 20%;
+  height: 100%;
 }
-.logo a {
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 2.3em;
-  font-family: Chivo, sans-serif;
-  font-weight: 400;
+.logo img {
+  height: 100%;
+  width: 100%;
 }
 
 /*NAVIGATION MENU*/
 .top {
   display: inline-block;
-  width: 10%;
-  height: 59%;
-  -moz-margin-top: 1.8em;
-  margin-top: 2em;
+  width: 80%;
+  height: 60%;
   margin-bottom: 0;
-  margin-left: 0.5em;
 }
 
 .navicon {
   color: white;
-  font-size: 2.2em;
-  text-align: center;
+  font-size: 3.5em;
+  text-align: right;
+  position: absolute;
+  top: 15%;
+  right: 10%;
 }
 .navicon:hover {
   cursor: pointer;
@@ -483,36 +477,33 @@ footer div a {
 
   /*LOGO*/
   .logo {
-    margin-top: 2em;
-    margin-left: 0.5em;
+    margin-top: 0;
+    margin-left: 1em;
     margin-bottom: 0;
     display: inline-block;
-    width: 80%;
-    height: 55%;
+    width: 20%;
+    height: 100%;
   }
-  .logo a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 2.3em;
-    font-family: Chivo, sans-serif;
-    font-weight: 400;
+  .logo img {
+    height: 100%;
+    width: 100%;
   }
 
   /*NAVIGATION MENU*/
   .top {
     display: inline-block;
-    width: 10%;
-    height: 59%;
-    margin-top: 2em;
+    width: 80%;
+    height: 60%;
     margin-bottom: 0;
   }
 
   .navicon {
     color: white;
-    font-size: 2.2em;
-    text-align: center;
+    font-size: 3.5em;
+    text-align: right;
+    position: absolute;
+    top: 15%;
+    right: 10%;
   }
   .navicon:hover {
     cursor: pointer;
@@ -864,14 +855,29 @@ footer div a {
     height: 12vh !important;
   }
 
+  .logo {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+  }
+  .logo img {
+    width: 10%;
+    visibility: visible;
+  }
+
   /*NAV BAR*/
   .NavDropDown {
     display: inline-block !important;
     visibility: visible;
+    padding: 0;
+    margin-top: 0.3em;
+    display: none;
+    height: 35%;
     width: 100%;
     text-align: center;
-    margin-top: 0.75em;
-    height: 35%;
   }
   .NavDropDown li {
     padding: 0.5em;
@@ -883,7 +889,7 @@ footer div a {
     text-align: center;
   }
   .NavDropDown li a {
-    font-size: 1.4em;
+    font-size: 1.6em;
     color: white;
     display: inline;
     text-decoration: none;
@@ -1001,9 +1007,13 @@ footer div a {
   .logo {
     display: block;
     width: 100%;
-    height: 40%;
+    height: 50%;
     text-align: center;
     margin-top: 0.5em;
+  }
+  .logo img {
+    visibility: visible;
+    width: 10%;
   }
 
   /*NAVIGATION BAR*/
@@ -1012,17 +1022,16 @@ footer div a {
     visibility: visible;
     width: 100%;
     text-align: center;
-    margin-top: 0.75em;
+    margin-top: 0.3em;
     height: 35%;
   }
-
   .NavDropDown li {
     padding: 0.5em;
     background-color: transparent;
     display: inline;
   }
   .NavDropDown li a {
-    font-size: 1.4em;
+    font-size: 1.6em;
     display: inline;
   }
 
@@ -1099,16 +1108,24 @@ footer div a {
   /*LOGO*/
   .logo {
     display: inline-block;
-    width: 35%;
+    width: 20%;
     text-align: left;
-    margin-top: 2.5em;
-    height: 50%;
+    margin-top: 0;
+    height: 100%;
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
   }
 
   /*NAVIGATION BAR*/
   .NavDropDown {
-    width: 60%;
+    width: 74%;
     text-align: right;
+    display: inline-block;
+    position: absolute;
+    top: 64%;
+    right: 2%;
   }
   .NavDropDown li {
     padding: 0.5em;
