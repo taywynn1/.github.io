@@ -186,10 +186,6 @@ header {
   display: block;
 }
 
-.right h2 {
-  color: black;
-}
-
 .right p {
   height: auto;
 }
@@ -534,7 +530,6 @@ footer div a {
     width: 80vw;
     margin-left: 10vw;
     display: block;
-    color: black;
   }
 
   .right p {
@@ -730,12 +725,8 @@ footer div a {
 
   .layout h1 {
     height: 25%;
-    color: black;
   }
 
-  .i3research h1 {
-    height: 50%;
-  }
 
   .layout h2 {
     color: black;
