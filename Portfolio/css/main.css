@@ -186,6 +186,10 @@ header {
   display: block;
 }
 
+.right h2 {
+  color: black;
+}
+
 .right p {
   height: auto;
 }
