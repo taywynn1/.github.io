@@ -294,19 +294,14 @@ form div {
 }
 
 .layout img {
-  width: 50%;
-  height: 50%;
+  width: 50px;
+  height: 50px;
 }
 
 .layout h1 {
   height: 25%;
   color: black;
 }
-
-.layout h2 {
-  color: black;
-}
-
 
 /*FOOTER*/
 footer {
