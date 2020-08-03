@@ -286,14 +286,18 @@ form div {
 
 /*PROJECT PAGES NOT YET CREATED*/
 .layout {
-  height: 82vh;
-  width: 80vw;
+  /*height: 82vh;
+  width: 80vw;*/
   margin-left: 10vw;
   margin-bottom: 2vh;
   margin-top: 38vh;
 }
 
 .layout h1 {
+  height: 25%;
+}
+
+.layout h2 {
   color: black;
 }
 
